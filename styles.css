@@ -11,6 +11,10 @@ html {
 	font: inherit;
 	vertical-align: baseline;
 }
+body{
+	font-size: 1.5em;
+	line-height: 2em;
+}
 
 img {
 	height: 150px;
