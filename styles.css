@@ -11,3 +11,8 @@ html {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+img {
+	height: 150px;
+	width: 150px;
+}
