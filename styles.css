@@ -16,6 +16,11 @@ body{
 	line-height: 1.5em;
 }
 
+a {
+	text-decoration: none;
+}
+
+
 #self{
 	display: block;
 	height: 30%;
