@@ -18,25 +18,34 @@ body {
 	text-align: center;
 
 }
+#top {
+	top: 0;
+}
+h1, h2, h3 {
+	/*font-family: 'Dosis', sans-serif;
+	font-family: 'Exo', sans-serif;*/
+	font-family: 'Orbitron', sans-serif;
+	text-decoration: underline;
+}
 
 body p, li {
 	display: block;
 	margin: 0 auto;
 	min-width: 300px;
 	width: 60%;
-
+	font-family: 'Exo', sans-serif;
 }
 
 header{
 	background-color: #020021;
-	padding: 20px 10px;
+	padding: 15px 10px;
 	position: fixed; 
 	width: 100%;
 	top: 0;
 }
 
 .about {
-	margin-top: 100px;
+	margin-top: 130px;
 }
 
 .skill {
@@ -49,12 +58,13 @@ h1{
 }
 nav a {
 	color: inherit;
-	margin: 30px;
+	margin: 20px;
 }
 
 h2 {
 
 	font-size: 1.85em;
+	padding: 20px 0;
 }
 
 h3{
@@ -64,6 +74,7 @@ h3{
 a {
 	text-decoration: none;
 	font-size: 1.1em;
+	font-family: 'Dosis', sans-serif;
 }
 
 a:hover {
@@ -95,10 +106,13 @@ a:hover {
 	margin: 0 auto;
 	min-width: 80px;
 	width: 10%;
+	z-index: 5;
+	position: relative;
+	top: 50px;
 
 }
 .contact{
-	padding-top: 20px;
+	padding-top: 40px;
 	background-color: #1B1A26;
 	width: 100%;
 	line-height: 1.35em;
@@ -114,11 +128,11 @@ form {
 form input, textarea{
 	width: 100%;
 	background-color: #12121A;
-	margin: 4px 0;
+	margin: 2px 0;
 	padding: 4px 2px;
 }
 footer {
-	padding: 20px;
+	padding: 30px;
 	background-color: #03011C;
 }
 .whiteText, input, textarea {
@@ -128,4 +142,42 @@ footer {
 footer p {
 	display: block;
 	text-align: center;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+#topBtn img:hover {
+	animation: bounce 1s;
+}
+
+textarea:focus, input:focus {
+
+border : 1px solid cyan;
+
+}
+
+@media only screen and (max-width: 620px){
+h1{
+	font-size: 2em;
+}
+header{
+	padding: 5px 5px;
+}
+nav a {
+	margin: 8px;
+}
 }
