@@ -31,3 +31,9 @@ a {
 	height: 30px;
 	width: 30px;
 }
+
+footer p{
+	display: inline-block;
+	text-align: center;
+
+}
