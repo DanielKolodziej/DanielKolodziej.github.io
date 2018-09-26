@@ -15,6 +15,16 @@
 body {
 	font-size: 1.15em;
 	line-height: 2.5em;
+
+}
+
+header{
+	background-color: #020021;
+	padding: 40px 10px; 
+}
+
+.skill {
+	background-color: #F4F4F4;
 }
 
 h1{
