@@ -97,6 +97,9 @@ header{
 .about {
 	margin-top: 130px;
 }
+span {
+	color: #FE015E;
+}
 
 .skill {
 	background-color: #F4F4F4;
@@ -217,10 +220,9 @@ footer p {
 }
 
 textarea:focus, input:focus {
-
-	/*border : 1px solid cyan;*/
 	outline-color: cyan;
 	outline-style: inset;
+	outline-width: .05px;
 
 }
 
