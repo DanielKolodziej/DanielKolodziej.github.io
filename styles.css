@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html {
+*{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -11,29 +11,78 @@ html {
 	font: inherit;
 	vertical-align: baseline;
 }
-body{
+
+body {
 	font-size: 1.15em;
-	line-height: 1.5em;
+	line-height: 2.5em;
 }
+
+h1{
+	font-size: 2em;
+	float: left;
+}
+nav a {
+
+	margin: 30px;
+}
+
+h2 {
+
+	font-size: 1.75em;
+} 
 
 a {
 	text-decoration: none;
 }
 
 
-#self{
+#self {
 	display: block;
+	min-width: 200px;
 	height: 30%;
 	width: 20%;
 	margin: 0 auto;
-}
-.logo{
+} 
+.logo {
 	height: 30px;
 	width: 30px;
 }
 
-footer p{
-	display: inline-block;
-	text-align: center;
+#top{
+	color: #FE9696;
+	background-color: #C40101;
+	display: flex;
+	justify-content: center;
 
+}
+.contact{
+	background-color: #1B1A26;
+	width: 100%;
+	line-height: 1.35em;
+}
+
+form {
+	display:block;
+	min-width: 300px;
+	width: 40%;
+	margin: 0 auto;
+}
+
+form input, textarea{
+	width: 100%;
+	background-color: #12121A;
+	margin: 4px 0;
+	padding: 4px 2px;
+}
+footer {
+	padding: 20px;
+	background-color: #03011C;
+}
+.whiteText, input, textarea {
+	color: #C7C6C6;
+}
+
+footer p {
+	display: block;
+	text-align: center;
 }

@@ -8,18 +8,18 @@
 <body>
 	<h1>Daniel Kolodziej's Resume</h1>
 	<nav>
-		<a href=".about">About</a>
-		<a href=".skill">Skills</a>
-		<a href=".school">Education</a>
-		<a href=".portfolio">Porfolio</a>
-		<a href="form">Contact</a>
+		<a href="#about">About</a>
+		<a href="#skill">Skills</a>
+		<a href="#school">Education</a>
+		<a href="#portfolio">Porfolio</a>
+		<a href="#contact">Contact</a>
 	</nav>
-	<div class="about">
+	<div class="about" id="about">
 		<h2>About Me</h2>
 		<img id="self" src="pictures/img_self.jpg" alt="picture of me">
 		<p>I am a recent graduate of Illinois Institute of Technology with a passion for web and application development.  For what I currently lack in professional experience, I make up for in willingness to learn new skills, work in a team, and take on challenges.</p>
 	</div>
-	<div class="skill">
+	<div class="skill" id="skill">
 		<h2>Skills</h2>
 		<ul>
 			<li>Proficient in: HTML5, CSS3, JavaScript, jQuery, AngularJS, MySQL, Java</li>
@@ -29,7 +29,7 @@
 			<li>Foundations in Agile Dev-Ops Programming and following coding standards</li>
 		</ul>
 	</div>
-	<div class="school">
+	<div class="school" id="school">
 		<h2>Academic Education</h2>
 		<ul>
 			<li>Dates of Attendance :   8/24/2014  To 8/15/2018</li>
@@ -44,7 +44,7 @@
 			<p>Web Site App Development, Open-Source Intelligent Device, Rich Internet Applications, System Integration, Network Admin &amp; Operations, Data Modeling &amp; Applications, Cyber Security Technologies, Open-Source Programming</p>
 			<p>Project Management, Industrial Risk Management, Supply Chain Management, Industrial Enterprises, Statistics Analytics for Decision Making</p>
 	</div>
-	<div class="portfolio">
+	<div class="portfolio" id="portfolio">
 		<h2>Coding/Projects</h2>
 		<!--target_blank to open link in new tab-->
 		<a href="https://github.com/DanielKolodziej" target="_blank">Github Profile
@@ -53,17 +53,19 @@
 		<a href="https://www.codecademy.com/DanielKolodziej" target="_blank">Codecademy Profile
 		<img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-JQxCbchj6Xxt-RvTT3B_0RS-wDecZaNbYajM4nOFMhlsK2Ziw" alt="codecademy logo"></a>
 	</div>
-	<form action="#">
-	  Name:<br>
-      <input type="text" name="name" placeholder="John Doe"><br>
-      Email:<br>
-	  <input type="email" name="email" placeholder="hired@google.com" required><br>
-	  <textarea placeholder="Your message here..." type="text"></textarea>
-	  <input type="submit" value="Submit">
-	</form>
-	<footer>
-		<p>author: Daniel Kolodziej &copy;2018</p>
-		<p>email: dankolodziej3773@yahoo.com</p>
-	</footer>
+	<a id="top" href="top">To the top</a>
+	<div class="contact" id="contact">
+		<h2 class="whiteText">Contact</h2>
+		<form action="#">
+		  <input type="text" name="name" placeholder="John Doe">
+		  <input type="email" name="email" placeholder="hired@google.com" required>
+		  <textarea rows="8" placeholder="Your message here..." type="text"></textarea>
+		  <input type="submit" value="Submit">
+		</form>
+		<footer class="whiteText">
+			<p>author: Daniel Kolodziej &copy;2018</p>
+			<p>email: dankolodziej3773@yahoo.com</p>
+		</footer>
+	</div>
 </body>
 </html>
