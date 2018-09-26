@@ -15,6 +15,15 @@
 body {
 	font-size: 1.15em;
 	line-height: 2.5em;
+	text-align: center;
+
+}
+
+body p, li {
+	display: block;
+	margin: 0 auto;
+	min-width: 300px;
+	width: 60%;
 
 }
 
@@ -32,18 +41,28 @@ h1{
 	float: left;
 }
 nav a {
-
+	color: inherit;
 	margin: 30px;
 }
 
 h2 {
 
-	font-size: 1.75em;
+	font-size: 1.85em;
+}
+
+h3{
+	font-size: 1.5em;
 } 
 
 a {
 	text-decoration: none;
+	font-size: 1.1em;
 }
+
+a:hover {
+	color: #FE015E;
+}
+
 
 
 #self {
@@ -52,17 +71,23 @@ a {
 	height: 30%;
 	width: 20%;
 	margin: 0 auto;
-} 
+}
+.portfolio a {
+	display: block;
+	margin: 0 auto;
+	min-width: 220px;
+	width: 20%;
+}
+ 
 .logo {
 	height: 30px;
 	width: 30px;
 }
 
-#top{
-	color: #FE9696;
-	background-color: #C40101;
-	display: flex;
-	justify-content: center;
+#topBtn img{
+	margin: 0 auto;
+	min-width: 80px;
+	width: 10%;
 
 }
 .contact{
