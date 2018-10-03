@@ -1,3 +1,4 @@
+//sass --watch styleSass.scss styles.css
 @import 'reset';
 
 $font-orbit:    'Orbitron', sans-serif;
@@ -6,6 +7,7 @@ $font-dosis:    'Dosis', sans-serif;
 $highlight-color: #FE015E;
 $white-color: #C7C6C6;
 $gray-color: #F4F4F4;
+$black-color: #090A10;
 body {
 	font-size: 1.15em;
 	line-height: 2.5em;
@@ -19,13 +21,21 @@ h1, h2, h3 {
 body p, li {
 	display: block;
 	margin: 0 auto;
-	min-width: 300px;
+	min-width: 320px;
 	width: 60%;
 	font-family: $font-exo;
 }
 
+.school {
+	li {
+	background-color: #E3E3FE;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	}
+}
+
 header{
-	background-color: #020021;
+	background-color: $black-color;
 	padding: 15px 10px;
 	position: fixed; 
 	width: 100%;
@@ -90,22 +100,25 @@ a {
 	width: 50px;
 	margin: 0 10px;
 }
+.plogo {
+	height: 30px;
+	width: 30px;
+}
 
 #topBtn {
 	img {
-	margin: 0 auto;
 	min-width: 100px;
 	width: 10%;
 	z-index: 5;
-	position: relative;
-	top: 30px;
+	position: absolute;
+	left: 45%;
 	}
 	img:hover {
 	animation: bounce 1s;
 	}
 }
 .contact{
-	padding-top: 40px;
+	padding-top: 100px;
 	background-color: #1B1A26;
 	width: 100%;
 	line-height: 1.35em;
@@ -128,7 +141,7 @@ form input, textarea{
 }
 footer {
 	padding: 30px;
-	background-color: #03011C;
+	background-color: $black-color;
 	p{
 	display: block;
 	text-align: center;
@@ -191,5 +204,8 @@ $breakpoint-phone: 480px;
 	height: 30px;
 	width: 30px;
 	margin: 0 5px;
-}
+	}
+	#topBtn img{
+		left: 40%;
+	}
 }
