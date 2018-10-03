@@ -79,10 +79,25 @@ body p {
   font-family: "Exo", sans-serif;
 }
 
+nav li {
+  float: right;
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+nav li a:hover {
+  color: #FE015E;
+}
+
 .skill ul {
   margin: 0 auto;
   min-width: 340px;
   width: 60%;
+  background: rgba(20, 20, 20, 0.3);
 }
 .skill h3 {
   font-family: "Exo", sans-serif;
@@ -105,10 +120,12 @@ body p {
   overflow: auto;
 }
 .skill li:hover {
-  background: #eee;
+  background: rgba(20, 20, 20, 0.4);
 }
 
 .school li {
+  text-align: center;
+  line-height: 2em;
   margin: 0 auto;
   font-family: "Exo", sans-serif;
   min-width: 320px;
@@ -136,18 +153,13 @@ span {
 }
 
 .skill, .portfolio {
-  background-color: #F4F4F4;
+  background-color: #8D7CFE;
 }
 
 h1 {
   font-size: 2em;
   float: left;
-}
-
-nav a {
-  color: inherit;
-  margin: 20px;
-  float: right;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 h2 {
@@ -157,15 +169,6 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-}
-
-a {
-  text-decoration: none;
-  font-size: 1.1em;
-  font-family: "Dosis", sans-serif;
-}
-a:hover {
-  color: #FE015E;
 }
 
 #self {
@@ -181,6 +184,12 @@ a:hover {
   margin: 0 auto;
   min-width: 240px;
   width: 20%;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-family: "Dosis", sans-serif;
+}
+.portfolio a:hover {
+  color: #FE015E;
 }
 
 .plogo {
@@ -266,13 +275,14 @@ textarea:focus, input:focus {
   outline-width: 0.05px;
 }
 
+/*@keyframes example {
+	    from {background-color: red;}
+	    to {background-color: yellow;}
+	}     animation-name: example;
+    			animation-duration: 5s;              */
 @media (max-width: 1100px) {
-  header {
-    padding: 5px 10px;
-  }
-
-  nav a {
-    margin: 15px;
+  nav li a {
+    padding: 14px 14px;
   }
 }
 @media only screen and (max-width: 400px), (orientation: portrait) {
@@ -280,10 +290,16 @@ textarea:focus, input:focus {
     display: none;
   }
 
-  nav ul li {
-    font-size: 0.9em;
+  nav {
+    text-align: center;
+  }
+  nav li {
+    float: none;
     display: inline;
-    margin: 8px;
+  }
+  nav li a {
+    display: inline-block;
+    padding: 10px;
   }
 
   .about {

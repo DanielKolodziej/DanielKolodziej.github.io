@@ -24,12 +24,31 @@ body p{
 	width: 60%;
 	font-family: $font-exo;
 }
+//start nav list
+nav{
+	li {
+	    float: right;
+	}
+
+	li a {
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 14px 20px;
+	    text-decoration: none;
+	    &:hover{
+	    	color: $highlight-color;
+	    }
+	}
+}
+//end nav list
 //start skills list
 .skill{
 	ul {
 	    margin: 0 auto;
 	    min-width: 340px;
 		width: 60%;
+		background: rgba(20,20,20, .3),
 		//background: rgba(1, 1, 1, 0.6);
 	  }
 	   
@@ -58,12 +77,14 @@ body p{
 	  }
 	   
 	  li:hover {
-	    background: #eee;
+	    background: rgba(20,20,20, .4),
 	  }
 }
 //end skills list
 .school {
 	li {
+	text-align: center;
+	line-height: 2em; 
 	margin: 0 auto;
 	font-family: $font-exo;
 	min-width: 320px;
@@ -91,17 +112,14 @@ span {
 }
 
 .skill, .portfolio {
-	background-color: $gray-color;
+	//background-color: $gray-color;
+	background-color: #8D7CFE;
 }
 
 h1{
 	font-size: 2em;
 	float: left;
-}
-nav a {
-	color: inherit;
-	margin: 20px;
-	float: right;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 h2 {
@@ -112,16 +130,6 @@ h2 {
 h3{
 	font-size: 1.5em;
 } 
-
-a {
-	text-decoration: none;
-	font-size: 1.1em;
-	font-family: $font-dosis;
-	&:hover{
-		color: $highlight-color;
-	}
-}
-
 
 #self {
 	display: block;
@@ -135,6 +143,12 @@ a {
 	margin: 0 auto;
 	min-width: 240px;
 	width: 20%;
+	text-decoration: none;
+	font-size: 1.1em;
+	font-family: $font-dosis;
+	&:hover{
+		color: $highlight-color;
+	}
 }
  
 .plogo {
@@ -221,14 +235,19 @@ textarea:focus, input:focus {
 	outline-width: .05px;
 
 }
-
+/*@keyframes example {
+	    from {background-color: red;}
+	    to {background-color: yellow;}
+	}     animation-name: example;
+    			animation-duration: 5s;              */
 $breakpoint-bighead: 1100px;
 @media (max-width: $breakpoint-bighead){
-	header {
-		padding: 5px 10px;
-	}
-	nav a {
-		margin: 15px;
+	nav {
+		li{
+			a{
+				padding: 14px 14px;
+			}
+		}
 	}
 }
 $breakpoint-phone: 400px;
@@ -236,10 +255,16 @@ $breakpoint-phone: 400px;
 	h1{
 		display: none;
 	}
-	nav ul li{
-		font-size: 0.9em;
-		display: inline;
-		margin: 8px;
+	nav{
+		text-align: center;
+		li{
+			float: none;
+			display: inline;
+			a{
+				display:inline-block;
+    			padding:10px;
+			}
+		}
 	}
 	.about {
 		margin-top: 50px;
