@@ -48,8 +48,7 @@ nav{
 	    margin: 0 auto;
 	    min-width: 340px;
 		width: 60%;
-		background: rgba(20,20,20, .3),
-		//background: rgba(1, 1, 1, 0.6);
+		background: rgba(20,20,20, .4),
 	  }
 	   
 	  h3 {
@@ -74,10 +73,11 @@ nav{
 	  li {
 	    padding: 10px;
 	    overflow: auto;
+	    border: 0.5px solid #0A023F;
 	  }
 	   
 	  li:hover {
-	    background: rgba(20,20,20, .4),
+	    background: rgba(20,20,20, .5),
 	  }
 }
 //end skills list
@@ -173,7 +173,7 @@ h3{
 	padding: 10px 0;
 	a {
 	display: block;
-	margin: 0 auto;
+	text-align: center;
 	min-width: 240px;
 	width: 20%;
 	}
@@ -183,7 +183,7 @@ h3{
 	padding-bottom: 15px;
 	background-color: #1B1A26;
 	width: 100%;
-	line-height: 1.35em;
+	line-height: 1.5em;
 }
 
 form {
@@ -240,8 +240,11 @@ textarea:focus, input:focus {
 	    to {background-color: yellow;}
 	}     animation-name: example;
     			animation-duration: 5s;              */
-$breakpoint-bighead: 1100px;
+$breakpoint-bighead: 950px;
 @media (max-width: $breakpoint-bighead){
+	h1{
+		font-size: 1.5em;
+	}
 	nav {
 		li{
 			a{
@@ -262,7 +265,8 @@ $breakpoint-phone: 400px;
 			display: inline;
 			a{
 				display:inline-block;
-    			padding:10px;
+    			padding:6px;
+    			font-size: 0.9em;
 			}
 		}
 	}
