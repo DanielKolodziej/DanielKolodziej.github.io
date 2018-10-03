@@ -68,12 +68,12 @@ body {
   text-align: center;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: "Orbitron", sans-serif;
   text-decoration: underline;
 }
 
-body p, li {
+body p {
   display: block;
   margin: 0 auto;
   min-width: 320px;
@@ -81,7 +81,40 @@ body p, li {
   font-family: "Exo", sans-serif;
 }
 
+.skill ul {
+  margin: 0 auto;
+  min-width: 320px;
+  width: 60%;
+}
+.skill h3 {
+  font-family: "Exo", sans-serif;
+  font-weight: bold;
+  font-size: 1.15em;
+  margin-right: 50px;
+}
+.skill li img {
+  height: 150px;
+  width: 200px;
+  float: left;
+  margin: 0 15px 0 0;
+}
+.skill li p {
+  font-size: 0.9em;
+  font-family: Georgia, sans-serif;
+}
+.skill li {
+  padding: 10px;
+  overflow: auto;
+}
+.skill li:hover {
+  background: #eee;
+}
+
 .school li {
+  margin: 0 auto;
+  font-family: "Exo", sans-serif;
+  min-width: 320px;
+  width: 60%;
   background-color: #E3E3FE;
   margin-bottom: 20px;
   border-radius: 25px;
@@ -275,6 +308,22 @@ textarea:focus, input:focus {
 
   #topBtn img {
     left: 40%;
+  }
+
+  .skill h3 {
+    font-size: 1.1em;
+    margin-right: 10px;
+  }
+  .skill li img {
+    height: 100px;
+    width: 100px;
+    margin: 0 10px 0 0;
+  }
+  .skill li p {
+    font-size: 0.7em;
+  }
+  .skill li {
+    padding: 5px;
   }
 }
 

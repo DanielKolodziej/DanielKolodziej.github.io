@@ -13,21 +13,61 @@ body {
 	line-height: 2.5em;
 	text-align: center;
 }
-h1, h2, h3 {
+h1, h2{
 	font-family: $font-orbit;
 	text-decoration: underline;
 }
 
-body p, li {
+body p{
 	display: block;
 	margin: 0 auto;
 	min-width: 320px;
 	width: 60%;
 	font-family: $font-exo;
 }
-
+//start skills list
+.skill{
+	ul {
+	    margin: 0 auto;
+	    min-width: 320px;
+		width: 60%;
+	  }
+	   
+	  h3 {
+	    font-family: $font-exo;
+	    font-weight: bold;
+	    font-size: 1.15em;
+	    margin-right: 50px;
+	  }
+	   
+	  li img {
+	    height: 150px;
+	    width: 200px;
+	    float: left;
+	    margin: 0 15px 0 0;
+	  }
+	   
+	  li p {
+	  	font-size: 0.9em;
+	    font-family: Georgia, sans-serif;
+	  }
+	   
+	  li {
+	    padding: 10px;
+	    overflow: auto;
+	  }
+	   
+	  li:hover {
+	    background: #eee;
+	  }
+}
+//end skills list
 .school {
 	li {
+	margin: 0 auto;
+	font-family: $font-exo;
+	min-width: 320px;
+	width: 60%;
 	background-color: #E3E3FE;
 	margin-bottom: 20px;
 	border-radius: 25px;
@@ -218,4 +258,24 @@ $breakpoint-phone: 480px;
 	#topBtn img{
 		left: 40%;
 	}
+	.skill{
+		h3 {
+	    font-size: 1.1em;
+	    margin-right: 10px;
+	  }
+	   
+	  li img {
+	    height: 100px;
+	    width: 100px;
+	    margin: 0 10px 0 0;
+	  }
+	   
+	  li p {
+	    font-size: 0.7em;
+	  }
+	   
+	  li {
+	    padding: 5px;
+	  }
+}
 }
