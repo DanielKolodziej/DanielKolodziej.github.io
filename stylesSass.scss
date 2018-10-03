@@ -8,17 +8,16 @@ $highlight-color: #FE015E;
 $white-color: #C7C6C6;
 $gray-color: #F4F4F4;
 $black-color: #090A10;
-body {
-	font-size: 1.15em;
-	line-height: 2.5em;
-	text-align: center;
-}
 h1, h2{
 	font-family: $font-orbit;
 	text-decoration: underline;
+	text-align: center;
 }
 
 body p{
+	font-size: 1.15em;
+	line-height: 2.5em;
+	text-align: center;
 	display: block;
 	margin: 0 auto;
 	min-width: 320px;
@@ -29,8 +28,9 @@ body p{
 .skill{
 	ul {
 	    margin: 0 auto;
-	    min-width: 320px;
+	    min-width: 340px;
 		width: 60%;
+		//background: rgba(1, 1, 1, 0.6);
 	  }
 	   
 	  h3 {
@@ -101,6 +101,7 @@ h1{
 nav a {
 	color: inherit;
 	margin: 20px;
+	float: right;
 }
 
 h2 {
@@ -136,11 +137,6 @@ a {
 	width: 20%;
 }
  
-.logo {
-	height: 50px;
-	width: 50px;
-	margin: 0 10px;
-}
 .plogo {
 	height: 30px;
 	width: 30px;
@@ -159,6 +155,7 @@ a {
 	}
 }
 .portfolio{
+	line-height: 2.5em;
 	padding: 10px 0;
 	a {
 	display: block;
@@ -169,6 +166,7 @@ a {
 }
 .contact{
 	padding-top: 100px;
+	padding-bottom: 15px;
 	background-color: #1B1A26;
 	width: 100%;
 	line-height: 1.35em;
@@ -190,7 +188,6 @@ form input, textarea{
 	outline: none;
 }
 footer {
-	padding: 30px;
 	background-color: $black-color;
 	p{
 	display: block;
@@ -227,10 +224,6 @@ textarea:focus, input:focus {
 
 $breakpoint-bighead: 1100px;
 @media (max-width: $breakpoint-bighead){
-	h1{
-		font-size: 1.15em;
-		float: none;
-	}
 	header {
 		padding: 5px 10px;
 	}
@@ -238,14 +231,15 @@ $breakpoint-bighead: 1100px;
 		margin: 15px;
 	}
 }
-$breakpoint-phone: 480px;
+$breakpoint-phone: 400px;
 @media only screen and (max-width: $breakpoint-phone), (orientation: portrait) {
 	h1{
 		display: none;
 	}
-	nav a {
-		margin: 8px;
+	nav ul li{
 		font-size: 0.9em;
+		display: inline;
+		margin: 8px;
 	}
 	.about {
 		margin-top: 50px;

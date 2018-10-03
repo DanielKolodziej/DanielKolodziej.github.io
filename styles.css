@@ -62,18 +62,16 @@ table {
 }
 
 /*-----------------^reset^--------------*/
-body {
-  font-size: 1.15em;
-  line-height: 2.5em;
-  text-align: center;
-}
-
 h1, h2 {
   font-family: "Orbitron", sans-serif;
   text-decoration: underline;
+  text-align: center;
 }
 
 body p {
+  font-size: 1.15em;
+  line-height: 2.5em;
+  text-align: center;
   display: block;
   margin: 0 auto;
   min-width: 320px;
@@ -83,7 +81,7 @@ body p {
 
 .skill ul {
   margin: 0 auto;
-  min-width: 320px;
+  min-width: 340px;
   width: 60%;
 }
 .skill h3 {
@@ -149,6 +147,7 @@ h1 {
 nav a {
   color: inherit;
   margin: 20px;
+  float: right;
 }
 
 h2 {
@@ -184,12 +183,6 @@ a:hover {
   width: 20%;
 }
 
-.logo {
-  height: 50px;
-  width: 50px;
-  margin: 0 10px;
-}
-
 .plogo {
   height: 30px;
   width: 30px;
@@ -207,6 +200,7 @@ a:hover {
 }
 
 .portfolio {
+  line-height: 2.5em;
   padding: 10px 0;
 }
 .portfolio a {
@@ -218,6 +212,7 @@ a:hover {
 
 .contact {
   padding-top: 100px;
+  padding-bottom: 15px;
   background-color: #1B1A26;
   width: 100%;
   line-height: 1.35em;
@@ -240,7 +235,6 @@ form input, textarea {
 }
 
 footer {
-  padding: 30px;
   background-color: #090A10;
 }
 footer p {
@@ -273,11 +267,6 @@ textarea:focus, input:focus {
 }
 
 @media (max-width: 1100px) {
-  h1 {
-    font-size: 1.15em;
-    float: none;
-  }
-
   header {
     padding: 5px 10px;
   }
@@ -286,14 +275,15 @@ textarea:focus, input:focus {
     margin: 15px;
   }
 }
-@media only screen and (max-width: 480px), (orientation: portrait) {
+@media only screen and (max-width: 400px), (orientation: portrait) {
   h1 {
     display: none;
   }
 
-  nav a {
-    margin: 8px;
+  nav ul li {
     font-size: 0.9em;
+    display: inline;
+    margin: 8px;
   }
 
   .about {
