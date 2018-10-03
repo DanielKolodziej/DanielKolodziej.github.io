@@ -15,14 +15,11 @@ $font-exo:    'Exo', sans-serif;
 $font-dosis:    'Dosis', sans-serif;
 $highlight-color: #FE015E;
 $white-color: #C7C6C6;
-
+$gray-color: #F4F4F4;
 body {
 	font-size: 1.15em;
 	line-height: 2.5em;
 	text-align: center;
-}
-#top {
-	top: 0;
 }
 h1, h2, h3 {
 	font-family: $font-orbit;
@@ -52,8 +49,8 @@ span {
 	color: $highlight-color;
 }
 
-.skill {
-	background-color: #F4F4F4;
+.skill, .portfolio {
+	background-color: $gray-color;
 }
 
 h1{
@@ -101,6 +98,7 @@ a {
 .logo {
 	height: 30px;
 	width: 30px;
+	margin: 0 10px;
 }
 
 #topBtn {
