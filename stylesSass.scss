@@ -40,6 +40,7 @@ header{
 	position: fixed; 
 	width: 100%;
 	top: 0;
+	z-index: 10;
 }
 
 .about {
@@ -115,6 +116,15 @@ a {
 	}
 	img:hover {
 	animation: bounce 1s;
+	}
+}
+.portfolio{
+	padding: 10px 0;
+	a {
+	display: block;
+	margin: 0 auto;
+	min-width: 240px;
+	width: 20%;
 	}
 }
 .contact{
