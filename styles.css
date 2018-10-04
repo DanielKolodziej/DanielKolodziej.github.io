@@ -146,7 +146,7 @@ header {
 }
 
 .about {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 
 span {
@@ -276,11 +276,6 @@ textarea:focus, input:focus {
   outline-width: 0.05px;
 }
 
-/*@keyframes example {
-	    from {background-color: red;}
-	    to {background-color: yellow;}
-	}     animation-name: example;
-    			animation-duration: 5s;              */
 @media (max-width: 950px) {
   h1 {
     font-size: 1.5em;

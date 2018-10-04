@@ -1,4 +1,3 @@
-//sass --watch styleSass.scss styles.css
 @import 'reset';
 
 $font-orbit:    'Orbitron', sans-serif;
@@ -6,7 +5,7 @@ $font-exo:    'Exo', sans-serif;
 $font-dosis:    'Dosis', sans-serif;
 $highlight-color: #FE015E;
 $white-color: #C7C6C6;
-$gray-color: #F4F4F4;
+//$gray-color: #F4F4F4;
 $black-color: #090A10;
 h1, h2{
 	font-family: $font-orbit;
@@ -105,14 +104,13 @@ header{
 }
 
 .about {
-	margin-top: 130px;
+	margin-top: 100px;
 }
 span {
 	color: $highlight-color;
 }
 
 .skill, .portfolio {
-	//background-color: $gray-color;
 	background-color: #8D7CFE;
 }
 
@@ -235,11 +233,6 @@ textarea:focus, input:focus {
 	outline-width: .05px;
 
 }
-/*@keyframes example {
-	    from {background-color: red;}
-	    to {background-color: yellow;}
-	}     animation-name: example;
-    			animation-duration: 5s;              */
 $breakpoint-bighead: 950px;
 @media (max-width: $breakpoint-bighead){
 	h1{
