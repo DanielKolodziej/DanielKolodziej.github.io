@@ -30,14 +30,14 @@
 	</div>
 	<div class="buttons">
 		<button id="changeText">encode</button>
-		<button id="switchText">switch</button>
-		<button id="passText">pass</button>
+		<button id="reverseText">reverse</button>
+		<button id="replaceText">replace</button><input type="text" id="out" size="2"></input><input type="text" id="in" size="2"></input>
 	</div>
 	<div class="skill" id="skill">
 	<h2>Skills</h2>
 	  <ul>
 		<li>
-		  <i id="skillPic" class="fab"></i><!--fab fa-angular-->
+		  <i id="skillPic" class="fab"></i>
 		  <h3>Proficient in:</h3>
 		  <p>HTML5, CSS3/Sass, JavaScript, jQuery, AngularJS, MySQL, Git</p>
 		</li>
@@ -135,7 +135,43 @@
 				}, 250);
 			setTimeout(function(){
 					document.getElementById('modify').innerText = val;
-				}, 5000);
+				}, 4000);
+		});
+		document.getElementById('reverseText').addEventListener('click', function() {
+			let val = document.getElementById('modify').innerText;
+			function reverseWord(word) {
+			  return word.split("").reverse().join("");
+			};
+
+			function reverseAllWords(sentence) {
+			  let words = sentence.split(" ");
+				for (let i = 0; i < words.length; i++) {
+				  words[i] = reverseWord(words[i]);
+				}
+			   return words.join(" ");
+			};
+
+			setTimeout(function(){
+					document.getElementById('modify').innerText = reverseAllWords(val);
+				}, 250);
+			setTimeout(function(){
+					document.getElementById('modify').innerText = val;
+				}, 4000);
+		});
+		document.getElementById('replaceText').addEventListener('click', function() {
+			let val = document.getElementById('modify').innerText;
+			let item1 = document.getElementById('out').value;
+			let item2 = document.getElementById('in').value;
+			function replaceAllOccurrences(string, toBeReplaced, replaceWith) {
+			  return string.split(toBeReplaced).join(replaceWith);
+			};
+			
+			setTimeout(function(){
+					document.getElementById('modify').innerText = replaceAllOccurrences(val, item1, item2);
+				}, 250);
+			setTimeout(function(){
+					document.getElementById('modify').innerText = val;
+				}, 4000);
 		});
 			
 	</script>
