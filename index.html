@@ -28,6 +28,10 @@
 		<img id="self" src="pictures/img_self.JPG" alt="picture of me">
 		<p>Hi, my name is <span>Daniel Kolodziej</span>. I am a recent graduate of Illinois Institute of Technology with a passion for web and application development.  I would make a great addition to your team because of my willingness to learn new skills, collaborate with others, and take on rewarding challenges.</p>
 	</div>
+	<button id="changeText">l33t text</button>
+	<button id="switchText">switch text</button>
+	<button id="randomText">random text</button>
+	<button id="passText">pass text</button>
 	<div class="skill" id="skill">
 	<h2>Skills</h2>
 	  <ul>
@@ -111,6 +115,20 @@
 		}
 		changeSkill();
 		setInterval(changeSkill, 6000);
+		
+		document.getElementById('changeText').addEventListener('click', function() {
+			/*let val = document.getElementById('about').getElementsByTagName("p");
+			console.log(val);
+			let newVal = val.replace("e", "3");
+			document.getElementById('about').getElementsByTagName("p") = newVal;
+			for (let i = 0; i < val.length; i++){
+				if (val[i] === 'e'){
+					val[i] = '3';
+					console.log(val[i], i);
+				}
+			}*/
+		});
+			
 	</script>
 </body>
 </html>
