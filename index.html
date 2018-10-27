@@ -57,7 +57,7 @@
 	  </ul>
 	</div>
 	<div class="school" id="school">
-		<h2>Academic Education <i class="fas fa-graduation-cap"></i></h2>
+		<h2>Education <i class="fas fa-graduation-cap"></i></h2>
 		<ul>
 			<li>Dates of Attendance :   8/24/2014  To 8/15/2018</li>
 			<li>Illinois Institute of Technology  Chicago, Illinois</li>
@@ -86,15 +86,16 @@
 		</form>
 	</div>	
 	<footer class="whiteText">
-			<p>author: Daniel Kolodziej &copy;2018</p>
-			<p>email: dankolodziej3773@yahoo.com</p>
+			<p>Daniel Kolodziej &copy;2018</p>
+			<p>dankolodziej3773@yahoo.com</p>
 	</footer>
 	<script>
 		function changeSkill(){
 			let skill = document.getElementById('skillPic');
 			skill.innerHTML = '&#xf13b';
 			skill.style.color = 'red';
-			skill.style.transitionDuration = "1.5s";
+			skill.style.WebKitransitionDuration = "1.5s"; //safari
+			skill.style.transitionDuration = "1.5s"; //standard
 			setTimeout(function(){
 					skill.innerHTML = '&#xf38b';
 					skill.style.color = 'yellow';

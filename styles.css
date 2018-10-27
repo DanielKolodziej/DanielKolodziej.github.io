@@ -113,33 +113,36 @@ nav li a:hover {
   color: #FE015E;
 }
 
+.skill {
+  min-width: 330px;
+}
 .skill ul {
   margin: 0 auto;
-  min-width: 340px;
-  width: 60%;
+  min-width: 330px;
+  width: 50%;
   background: rgba(20, 20, 20, 0.4);
 }
 .skill h3 {
   font-family: "Exo", sans-serif;
   font-weight: bold;
   font-size: 1.15em;
-  margin-right: 50px;
 }
 .skill li i {
   text-align: center;
-  min-width: 130px;
+  width: 122px;
   font-size: 100px;
   float: left;
-  margin: 0 15px 0 0;
+  padding: 0 10px 0 0;
 }
 .skill li p {
   font-size: 0.9em;
   font-family: Georgia, sans-serif;
 }
 .skill li {
-  padding: 10px;
+  padding: 20px;
   overflow: auto;
-  border: 0.5px solid #0A023F;
+  border: 0.25px solid #0A023F;
+  min-width: 330px;
 }
 .skill li:hover {
   background: rgba(20, 20, 20, 0.5);
@@ -150,7 +153,7 @@ nav li a:hover {
   line-height: 2em;
   margin: 0 auto;
   font-family: "Exo", sans-serif;
-  min-width: 320px;
+  min-width: 280px;
   width: 60%;
   background-color: #E3E3FE;
   margin-bottom: 20px;
@@ -235,8 +238,8 @@ h3 {
 
 form {
   display: block;
-  min-width: 300px;
-  width: 40%;
+  min-width: 280px;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -311,31 +314,25 @@ textarea:focus, input:focus {
   .about {
     margin-top: 50px;
   }
-
-  .logo {
-    height: 30px;
-    width: 30px;
-    margin: 0 5px;
-  }
-
-  #topBtn img {
-    left: 40%;
+  .about p {
+    font-size: 1em;
+    line-height: 2em;
   }
 
   .skill h3 {
     font-size: 1.1em;
-    margin-right: 10px;
-  }
-  .skill li img {
-    height: 100px;
-    width: 100px;
-    margin: 0 10px 0 0;
   }
   .skill li p {
-    font-size: 0.7em;
+    font-size: 0.68em;
+    line-height: 1.5em;
+  }
+  .skill li i {
+    padding: 0 5px 0 0;
+    font-size: 80px;
   }
   .skill li {
-    padding: 5px;
+    padding: 4px;
+    min-width: 315px;
   }
 }
 
