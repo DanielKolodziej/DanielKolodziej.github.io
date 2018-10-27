@@ -26,9 +26,9 @@
 	<div class="about" id="about">
 		<h2>About Me</h2>
 		<img id="self" src="pictures/img_self.JPG" alt="picture of me">
-		<p>Hi, my name is <span>Daniel Kolodziej</span>. I am a recent graduate of Illinois Institute of Technology with a passion for web and application development.  I would make a great addition to your team because of my willingness to learn new skills, collaborate with others, and take on rewarding challenges.</p>
+		<p id="modify">Hi, my name is <span>Daniel Kolodziej</span>. I am a recent graduate of Illinois Institute of Technology with a passion for web and application development.  I would make a great addition to your team because of my willingness to learn new skills, collaborate with others, and take on rewarding challenges.</p>
 	</div>
-	<button id="changeText">l33t text</button>
+	<button id="changeText">encode text</button>
 	<button id="switchText">switch text</button>
 	<button id="randomText">random text</button>
 	<button id="passText">pass text</button>
@@ -117,16 +117,19 @@
 		setInterval(changeSkill, 6000);
 		
 		document.getElementById('changeText').addEventListener('click', function() {
-			/*let val = document.getElementById('about').getElementsByTagName("p");
-			console.log(val);
-			let newVal = val.replace("e", "3");
-			document.getElementById('about').getElementsByTagName("p") = newVal;
-			for (let i = 0; i < val.length; i++){
-				if (val[i] === 'e'){
-					val[i] = '3';
-					console.log(val[i], i);
-				}
-			}*/
+			let val = document.getElementById('modify').innerText;
+			function replaceAllOccurrences(string, toBeReplaced, replaceWith) {
+			  return string.split(toBeReplaced).join(replaceWith);
+			};
+
+			function encode(string) {
+			  let replacementObject = { "a": "@", "e": "3", "s": "$", "i": "!", "o":"0", "l":"1" };
+				for (let key in replacementObject) {
+				  string = replaceAllOccurrences(string, key, replacementObject[key]); 
+				}	
+				return string;
+			};
+			document.getElementById('modify').innerText = encode(val);
 		});
 			
 	</script>
