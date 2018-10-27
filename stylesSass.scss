@@ -5,7 +5,7 @@ $font-exo:    'Exo', sans-serif;
 $font-dosis:    'Dosis', sans-serif;
 $highlight-color: #FE015E;
 $white-color: #C7C6C6;
-//$gray-color: #F4F4F4;
+$gray-color: #F4F4F4;
 $black-color: #090A10;
 h1, h2{
 	font-family: $font-orbit;
@@ -59,12 +59,33 @@ nav{
 	}
 }
 //end nav list
+.buttons{
+	margin: 0 auto;
+	text-align: center;
+  	background: $gray-color;//rgba(0, 0, 0, .1);
+  	border-bottom: 1px solid rgba(0, 0, 0, .1);
+  	padding: 7px;
+	button{
+		font: bold .9em arial, helvetica, sans-serif;
+		padding: 5px 15px;
+		cursor: pointer;
+		border: 1px solid #bbb;
+		border-radius: 5px;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  		text-shadow: 0 1px 0 rgba(255,255,255, .9);
+  		color: #555;
+  		outline: none;
+	}
+	button:hover, button:active{
+	  background-color: #eee;
+	}
+}
 //start skills list
 .skill{
-	min-width: 330px;
+	min-width: 324px;
 	ul {
 	    margin: 0 auto;
-	    min-width: 330px;
+	    min-width: 324px;
 		width: 50%;
 		background: rgba(20,20,20, .4),
 	  }
@@ -91,7 +112,7 @@ nav{
 	    padding: 20px;
 	    overflow: auto;
 	    border: 0.25px solid #0A023F;
-	    min-width: 330px;
+	    min-width: 324px;
 	  }
 	   
 	  li:hover {

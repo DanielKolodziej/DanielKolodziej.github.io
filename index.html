@@ -28,10 +28,11 @@
 		<img id="self" src="pictures/img_self.JPG" alt="picture of me">
 		<p id="modify">Hi, my name is <span>Daniel Kolodziej</span>. I am a recent graduate of Illinois Institute of Technology with a passion for web and application development.  I would make a great addition to your team because of my willingness to learn new skills, collaborate with others, and take on rewarding challenges.</p>
 	</div>
-	<button id="changeText">encode text</button>
-	<button id="switchText">switch text</button>
-	<button id="randomText">random text</button>
-	<button id="passText">pass text</button>
+	<div class="buttons">
+		<button id="changeText">encode</button>
+		<button id="switchText">switch</button>
+		<button id="passText">pass</button>
+	</div>
 	<div class="skill" id="skill">
 	<h2>Skills</h2>
 	  <ul>
@@ -129,7 +130,12 @@
 				}	
 				return string;
 			};
-			document.getElementById('modify').innerText = encode(val);
+			setTimeout(function(){
+					document.getElementById('modify').innerText = encode(val);
+				}, 250);
+			setTimeout(function(){
+					document.getElementById('modify').innerText = val;
+				}, 5000);
 		});
 			
 	</script>

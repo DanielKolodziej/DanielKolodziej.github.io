@@ -113,12 +113,34 @@ nav li a:hover {
   color: #FE015E;
 }
 
+.buttons {
+  margin: 0 auto;
+  text-align: center;
+  background: #F4F4F4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 7px;
+}
+.buttons button {
+  font: bold 0.9em arial, helvetica, sans-serif;
+  padding: 5px 15px;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 2px 2px -1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  color: #555;
+  outline: none;
+}
+.buttons button:hover, .buttons button:active {
+  background-color: #eee;
+}
+
 .skill {
-  min-width: 330px;
+  min-width: 324px;
 }
 .skill ul {
   margin: 0 auto;
-  min-width: 330px;
+  min-width: 324px;
   width: 50%;
   background: rgba(20, 20, 20, 0.4);
 }
@@ -142,7 +164,7 @@ nav li a:hover {
   padding: 20px;
   overflow: auto;
   border: 0.25px solid #0A023F;
-  min-width: 330px;
+  min-width: 324px;
 }
 .skill li:hover {
   background: rgba(20, 20, 20, 0.5);
