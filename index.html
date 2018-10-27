@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Daniel Kolodziej Resume</title>
+	<!--FONT AWESOME CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Dosis|Exo|Orbitron" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
@@ -30,32 +32,32 @@
 	<h2>Skills</h2>
 	  <ul>
 		<li>
-		  <img src="https://quantilus.com/wp-content/uploads/2018/01/html5-css-javascript-logos.png" alt="web dev logos">
+		  <i id="skillPic" class="fab"></i><!--fab fa-angular-->
 		  <h3>Proficient in:</h3>
 		  <p>HTML5, CSS3/Sass, JavaScript, jQuery, AngularJS, MySQL, Git</p>
 		</li>
 		  
 		<li>
-		  <img src="https://cdn-images-1.medium.com/max/1600/1*zVDcaM6mqhi9m0LP_Sq4Ag.jpeg" alt="laptop">
+		  <i class="fas fa-laptop-code"></i>
 		  <h3>Experience using:</h3>
 		  <p>Java, MongoDB, Node/Express, Python, AutoCad</p>
 		</li>
 	 
 		<li>
-		  <img src="https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&h=350" alt="fistbump">
-		  <h3>Cross-Training:</h3>
+		  <i class="fas fa-chalkboard-teacher"></i>
+		  <h3>Cross-Functional:</h3>
 		  <p>Functioned in roles including <span>UI/UX Designer</span>, <span>Web Developer</span>, and <span>Project Manager</span>.</p>
 		</li>
 	 
 		<li>
-		  <img src="https://miroslawdabrowski.com/wp-content/uploads/2015/10/CRISC-Vertical.jpg" alt="crisc logo">
+		  <i class="fas fa-book"></i>
 		  <h3>CRISC:</h3>
 		  <p>Understanding of risk and information systems control</p>
 		</li>
 	  </ul>
 	</div>
 	<div class="school" id="school">
-		<h2>Academic Education</h2>
+		<h2>Academic Education <i class="fas fa-graduation-cap"></i></h2>
 		<ul>
 			<li>Dates of Attendance :   8/24/2014  To 8/15/2018</li>
 			<li>Illinois Institute of Technology  Chicago, Illinois</li>
@@ -68,28 +70,46 @@
 	<div class="portfolio" id="portfolio">
 		<h2>Coding/Projects</h2>
 		<!--target_blank to open link in new tab-->
-		<a href="https://github.com/DanielKolodziej" target="_blank">Github Profile
-		<img class="plogo" src="https://camo.githubusercontent.com/7710b43d0476b6f6d4b4b2865e35c108f69991f3/68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67" alt="github logo"></a>
-		<a href="https://www.codecademy.com/DanielKolodziej" target="_blank">Codecademy Profile
-		<img class="plogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-JQxCbchj6Xxt-RvTT3B_0RS-wDecZaNbYajM4nOFMhlsK2Ziw" alt="codecademy logo"></a>
-		<a href="https://www.hackerrank.com/dankolodziej3773" target="_blank">HackerRank Profile
-		<img class="plogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpiDm4off_8-jpkljkBkRbCzZMWn7fP0rAzN_9KqCWiBAyOWlvOA" alt="hackerrank logo"></a>
-		<a href="pictures/Kolodziej_Daniel_Resume.docx" download="DanielKolodziejResume">Download My Resume
-		<img class="plogo" src="https://images.techhive.com/images/article/2013/01/word-2013-logo-100019783-orig.jpg" alt="word logo"></a>
+		<a href="https://www.hackerrank.com/dankolodziej3773" target="_blank">Github Profile <i id="gitLogo" class="fab fa-github"></i></a>
+		<a href="https://www.codecademy.com/DanielKolodziej" target="_blank">Codecademy Profile <i id="codecademyLogo" class="fas fa-code"></i></a>
+		<a href="https://www.hackerrank.com/dankolodziej3773" target="_blank">HackerRank Profile <i id="hackerrankLogo" class="fab fa-hackerrank"></i></a>
+		<a href="pictures/Kolodziej_Daniel_Resume.docx" download="DanielKolodziejResume">Download My Resume <i id="downloadLogo" class="fas fa-file-download"></i></a>
 	</div>
-	<a id="topBtn" href="#about"><img src="https://i1.wp.com/freepngimages.com/wp-content/uploads/2014/04/arrowup_2.png?fit=220%2C220" alt="up arrow"></a>
+	<a id="topBtn" href="#about"><div id="upArrow" class="fas fa-arrow-alt-circle-up"></div></a>
 	<div class="contact" id="contact">
 		<h2 class="whiteText">Contact</h2>
 		<form action="mailto:dankolodziej3773@yahoo.com" enctype="text/plain">
 		  <input type="text" name="name" placeholder="John Doe">
 		  <input type="email" name="email" placeholder="hired@google.com" required>
 		  <textarea rows="8" placeholder="Your message here..." type="text"></textarea>
-		  <input type="submit" value="Send">
+		  <input id="send" type="submit" value="Send &#xf0e0;" class="fas fa-envelope">
 		</form>
 	</div>	
 	<footer class="whiteText">
 			<p>author: Daniel Kolodziej &copy;2018</p>
 			<p>email: dankolodziej3773@yahoo.com</p>
 	</footer>
+	<script>
+		function changeSkill(){
+			let skill = document.getElementById('skillPic');
+			skill.innerHTML = '&#xf13b';
+			skill.style.color = 'red';
+			skill.style.transitionDuration = "1.5s";
+			setTimeout(function(){
+					skill.innerHTML = '&#xf38b';
+					skill.style.color = 'yellow';
+				}, 1500);
+			setTimeout(function(){
+					skill.innerHTML = '&#xf420';
+					skill.style.color = 'red';
+				}, 3000);
+			setTimeout(function(){
+					skill.innerHTML = '&#xf1d3';
+					skill.style.color = 'black';
+				}, 4500);
+		}
+		changeSkill();
+		setInterval(changeSkill, 6000);
+	</script>
 </body>
 </html>

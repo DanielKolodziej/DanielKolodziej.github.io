@@ -79,6 +79,26 @@ body p {
   font-family: "Exo", sans-serif;
 }
 
+#hackerrankLogo, #gitLogo, #downloadLogo, #codecademyLogo {
+  font-size: 30px;
+}
+
+#send {
+  font-size: 20px;
+}
+
+#upArrow {
+  font-size: 90px;
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  margin-left: -45px;
+}
+#upArrow:hover {
+  animation: bounce 1s;
+  color: #FE015E;
+}
+
 nav li {
   float: right;
 }
@@ -105,9 +125,10 @@ nav li a:hover {
   font-size: 1.15em;
   margin-right: 50px;
 }
-.skill li img {
-  height: 150px;
-  width: 200px;
+.skill li i {
+  text-align: center;
+  min-width: 130px;
+  font-size: 100px;
   float: left;
   margin: 0 15px 0 0;
 }
@@ -193,22 +214,6 @@ h3 {
   color: #FE015E;
 }
 
-.plogo {
-  height: 30px;
-  width: 30px;
-}
-
-#topBtn img {
-  min-width: 100px;
-  width: 10%;
-  z-index: 5;
-  position: absolute;
-  left: 45%;
-}
-#topBtn img:hover {
-  animation: bounce 1s;
-}
-
 .portfolio {
   line-height: 2.5em;
   padding: 10px 0;
@@ -285,7 +290,7 @@ textarea:focus, input:focus {
     padding: 14px 14px;
   }
 }
-@media only screen and (max-width: 400px), (orientation: portrait) {
+@media only screen and (max-width: 760px) {
   h1 {
     display: none;
   }
