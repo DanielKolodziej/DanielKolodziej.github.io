@@ -80,6 +80,44 @@ nav{
 	  background-color: #eee;
 	}
 }
+#out, #in{
+  	border: 1px solid black;
+  	text-indent: 5px;
+  	color: black;
+ }
+.weather{
+	padding: 7px;
+	text-align: center;
+	background: #FE9C3B;
+
+	#city{
+	  	text-indent: 22px;
+	  	color: black;
+	  	position: relative;
+ 	}
+	 #cityIcon{
+	  	background: #D5D5D5;
+	  	z-index: 2;
+	  	position: absolute;
+	  	margin-left: -115px;
+	  	margin-top: 4px;
+	  	padding: 1px;
+	}
+	button{
+		//font: bold .9em arial, helvetica, sans-serif;
+		padding: 3px 15px;
+		cursor: pointer;
+		border: 1px solid #bbb;
+		border-radius: 5px;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  		text-shadow: 0 1px 0 rgba(255,255,255, .9);
+  		color: #555;
+  		outline: none;
+	}
+	button:hover, button:active{
+	  background-color: #eee;
+	}
+}
 //start skills list
 .skill{
 	min-width: 324px;

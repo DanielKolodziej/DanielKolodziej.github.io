@@ -135,6 +135,44 @@ nav li a:hover {
   background-color: #eee;
 }
 
+#out, #in {
+  border: 1px solid black;
+  text-indent: 5px;
+  color: black;
+}
+
+.weather {
+  padding: 7px;
+  text-align: center;
+  background: #FE9C3B;
+}
+.weather #city {
+  text-indent: 22px;
+  color: black;
+  position: relative;
+}
+.weather #cityIcon {
+  background: #D5D5D5;
+  z-index: 2;
+  position: absolute;
+  margin-left: -115px;
+  margin-top: 4px;
+  padding: 1px;
+}
+.weather button {
+  padding: 3px 15px;
+  cursor: pointer;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 2px 2px -1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  color: #555;
+  outline: none;
+}
+.weather button:hover, .weather button:active {
+  background-color: #eee;
+}
+
 .skill {
   min-width: 324px;
 }
