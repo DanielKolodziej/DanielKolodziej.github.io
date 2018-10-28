@@ -38,19 +38,25 @@
 				<button id="reverseText">reverse</button>
 				<button id="replaceText">replace</button><input type="text" id="out" placeholder="find" size="4"></input><input type="text" id="in" placeholder="replace" size="4"></input>
 			</div>
+			<div class="weather">
+				Enter City:<input type="text" placeholder="Chicago" id="city" size="10"><i id="cityIcon" class="fas fa-city"></i></input>
+				<!--<i id="cityIcon" class="fas fa-city"></i>-->
+				<button id="getWeather" class='fas fa-cloud-sun'>Weather</button>
+				<i id="result"></i>
+			</div>
 		</div>
 	</div>
 	<!--<div class="buttons">
 		<button id="changeText">encode</button>
 		<button id="reverseText">reverse</button>
 		<button id="replaceText">replace</button><input type="text" id="out" placeholder="find" size="4"></input><input type="text" id="in" placeholder="replace" size="4"></input>
-	</div>-->
+	</div>
 	<div class="weather">
 		Enter City:<input type="text" placeholder="Chicago" id="city" size="10"><i id="cityIcon" class="fas fa-city"></i></input>
-		<!--<i id="cityIcon" class="fas fa-city"></i>-->
+		<!--<i id="cityIcon" class="fas fa-city"></i>
 		<button id="getWeather" class='fas fa-cloud-sun'>Weather</button>
 		<i id="result"></i>
-	</div>
+	</div>-->
 	<div class="skill" id="skill">
 	<h2>Skills</h2>
 	  <ul>
@@ -203,7 +209,7 @@
 			  var data = JSON.parse(this.response);
 
 			  if (request.status >= 200 && request.status < 400) {
-				document.getElementById('result').innerHTML = 'Temp: ' + Math.round(data.main.temp) + '&#8457; ,' + data.weather[0].main;
+				document.getElementById('result').innerHTML = 'Temp: ' + Math.round(data.main.temp) + '&#8457; ' + data.weather[0].main;
 				document.getElementById('result').style.color = 'black';
 			  } else {
 				document.getElementById('result').innerText = 'Must enter valid city';

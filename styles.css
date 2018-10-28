@@ -117,6 +117,7 @@ nav li a:hover {
   margin: 0 auto;
   text-align: center;
   padding: 7px;
+  margin-top: 20px;
 }
 .buttons button {
   font: bold 0.9em arial, helvetica, sans-serif;
@@ -126,6 +127,7 @@ nav li a:hover {
   border-radius: 5px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 2px 2px -1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  background-color: #DEDDDD;
   color: #555;
   outline: none;
 }
@@ -140,31 +142,36 @@ nav li a:hover {
 }
 
 .weather {
-  padding: 7px;
+  padding: 4px;
   text-align: center;
   background: #FE9C3B;
+  width: 320px;
+  margin: 0 auto;
+  border-radius: 25px;
+  color: black;
 }
 .weather #city {
   text-indent: 22px;
   color: black;
   position: relative;
+  border: 1px solid #282828;
 }
 .weather #cityIcon {
   background: #D5D5D5;
-  z-index: 2;
   position: absolute;
-  margin-left: -115px;
+  margin-left: -114px;
   margin-top: 4px;
   padding: 1px;
 }
 .weather button {
+  background-color: #DEDDDD;
   padding: 3px 15px;
   cursor: pointer;
   border: 1px solid #bbb;
   border-radius: 5px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 2px 2px -1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
-  color: #555;
+  color: #282828;
   outline: none;
 }
 .weather button:hover, .weather button:active {
@@ -235,12 +242,12 @@ header {
   background-size: cover;
   position: relative;
   color: white;
-  min-height: 350px;
+  min-height: 400px;
 }
 
 .tranBox {
   background-color: rgba(0, 0, 0, 0.7);
-  min-height: 350px;
+  min-height: 400px;
 }
 
 /*
@@ -396,6 +403,13 @@ textarea:focus, input:focus {
   .about p {
     font-size: 1em;
     line-height: 2em;
+  }
+
+  .buttons {
+    width: 250px;
+  }
+  .buttons button {
+    margin: 5px 0;
   }
 
   .skill h3 {
