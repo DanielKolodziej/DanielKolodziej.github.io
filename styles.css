@@ -116,8 +116,6 @@ nav li a:hover {
 .buttons {
   margin: 0 auto;
   text-align: center;
-  background: #F4F4F4;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 7px;
 }
 .buttons button {
@@ -230,9 +228,30 @@ header {
 }
 
 .about {
-  margin-top: 100px;
+  margin-top: 70px;
+  background-image: url("pictures/editedMe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  min-height: 350px;
 }
 
+.tranBox {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 350px;
+}
+
+/*
+.heroText{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}*/
 span {
   color: #FE015E;
 }
