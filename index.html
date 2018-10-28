@@ -35,6 +35,10 @@
 		<button id="reverseText">reverse</button>
 		<button id="replaceText">replace</button><input type="text" id="out" size="2"></input><input type="text" id="in" size="2"></input>
 	</div>
+	<i class="fas fa-city"></i>
+	Enter City:<input type="text" value="Chicago" id="city"></input>
+	<button id="getWeather" class='fas fa-cloud-sun'>Weather</button>
+    <div id="result"></div>
 	<div class="skill" id="skill">
 	<h2>Skills</h2>
 	  <ul>
@@ -174,6 +178,28 @@
 			setTimeout(function(){
 					document.getElementById('modify').innerText = val;
 				}, 4000);
+		});
+		const api = 'https://api.openweathermap.org/data/2.5/weather?q=';
+		const key = '&APPID=4564aea809af09507f4783c74a07613b&units=imperial';
+		document.getElementById('getWeather').addEventListener('click', function() {
+		  let value = document.getElementById('city').value;
+		  let val = `${api}` + `${value}` + `${key}`;
+		  var request = new XMLHttpRequest();
+		  request.open('GET', val,true);
+		  request.onload = function () {
+			  // Begin accessing JSON data here
+			  var data = JSON.parse(this.response);
+
+			  if (request.status >= 200 && request.status < 400) {
+				//console.log(data.main.temp);
+				document.getElementById('result').innerText = 'Temp: ' + Math.round(data.main.temp) + ' with ' + data.weather[0].main;
+				document.getElementById('result').style.color = 'black';
+			  } else {
+				document.getElementById('result').innerText = 'Must enter valid city';
+				document.getElementById('result').style.color = 'red';
+			  }
+			}
+		request.send();
 		});
 			
 	</script>
