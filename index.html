@@ -106,32 +106,6 @@
 			<p>dankolodziej3773@yahoo.com</p>
 	</footer>
 	<script>
-		var nodemailer = require('nodemailer');
-		document.getElementById('send').addEventListener('click', function() {
-			var sender = document.getElementById('email').value;
-			var transporter = nodemailer.createTransport({
-			  service: 'yahoo',
-			  auth: {
-				user: 'dankolodziej3773@yahoo.com',
-				pass: 'm3a3N7g7o'
-			  }
-			});
-
-			var mailOptions = {
-			  from: sender,
-			  to: 'dankolodziej3773@yahoo.com',
-			  subject: 'Sending Email using Node.js',
-			  text: 'That was easy!'
-			};
-
-			transporter.sendMail(mailOptions, function(error, info){
-			  if (error) {
-				console.log(error);
-			  } else {
-				console.log('Email sent: ' + info.response);
-			  }
-			});
-		});
 		function changeSkill(){
 			let skill = document.getElementById('skillPic');
 			skill.innerHTML = '&#xf13b';
