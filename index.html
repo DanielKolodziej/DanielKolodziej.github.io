@@ -11,8 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<!-- icon of website in browser tab-->
 	<link rel="icon" href="pictures/file-code-solid.ico">
-	<!--bootswatch link for contact form-->
-	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-3Ivskwia8Fui5tbQi+RW4DgTkJ8d+hW7mLe7Yk89ibmD9482VECh0WFof8kIEjwI" crossorigin="anonymous">
 </head>
 <body>
 	<header class="whiteText">
@@ -27,14 +25,12 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="about" id="about">
+	<div id="about">
 		<div class="tranBox">
-			<div class="heroText">
 				<h2>About Me</h2>
 				<!--<img id="self" src="pictures/img_self.JPG" alt="picture of me">-->
 				<!--<img id="self" src="pictures/editedMe.jpg" alt="picture of me">-->
 				<p id="modify">Hi, my name is <span>Daniel Kolodziej</span>. I am a recent graduate of Illinois Institute of Technology with a passion for web and application development.  I would make a great addition to your team because of my willingness to learn new skills, collaborate with others, and take on rewarding challenges.</p>
-			</div>
 			<div class="buttons">
 				<button id="changeText">encode</button>
 				<button id="reverseText">reverse</button>
@@ -48,7 +44,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="skill" id="skill">
+	<div id="skill">
 	<h2>Skills</h2>
 	  <ul>
 		<li>
@@ -76,7 +72,7 @@
 		</li>
 	  </ul>
 	</div>
-	<div class="school" id="school">
+	<div id="school">
 		<h2>Education <i class="fas fa-graduation-cap"></i></h2>
 		<ul>
 			<li>Dates of Attendance :   8/24/2014  To 8/15/2018</li>
@@ -87,7 +83,7 @@
 			<li>Specialization: Web Design &amp; Application Development</li>
 		</ul>
 	</div>
-	<div class="portfolio" id="portfolio">
+	<div id="portfolio">
 		<h2>Coding/Projects</h2>
 		<!--target_blank to open link in new tab-->
 		<a href="https://www.hackerrank.com/dankolodziej3773" target="_blank">Github Profile <i id="gitLogo" class="fab fa-github"></i></a>
@@ -96,7 +92,7 @@
 		<a href="pictures/Kolodziej_Daniel_Resume.docx" download="DanielKolodziejResume">Download My Resume <i id="downloadLogo" class="fas fa-file-download"></i></a>
 	</div>
 	<a id="topBtn" href="#about"><div id="upArrow" class="fas fa-arrow-alt-circle-up"></div></a>
-	<div class="contact" id="contact">
+	<div id="contact">
 		<h2 class="whiteText">Contact</h2>
 		<form action="mailto:dankolodziej3773@yahoo.com" enctype="text/plain">
 		  <input type="text" name="name" placeholder="John Doe">
@@ -105,27 +101,6 @@
 		  <input id="send" type="submit" value="Send &#xf0e0;" class="fas fa-envelope">
 		</form>
 	</div>	
-	<div class="container">	
-    	<?php if($msg != ''): ?>
-    		<div class="alert <?php echo $msgClass; ?>"><?php echo $msg; ?></div>
-    	<?php endif; ?>
-      <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-	      <div class="form-group">
-		      <label>Name</label>
-		      <input type="text" name="name" class="form-control" value="<?php echo isset($_POST['name']) ? $name : ''; ?>">
-	      </div>
-	      <div class="form-group">
-	      	<label>Email</label>
-	      	<input type="text" name="email" class="form-control" value="<?php echo isset($_POST['email']) ? $email : ''; ?>">
-	      </div>
-	      <div class="form-group">
-	      	<label>Message</label>
-	      	<textarea name="message" class="form-control"><?php echo isset($_POST['message']) ? $message : ''; ?></textarea>
-	      </div>
-	      <br>
-	      <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
 	<footer class="whiteText">
 			<p>Daniel Kolodziej &copy;2018</p>
 			<p>dankolodziej3773@yahoo.com</p>
