@@ -96,7 +96,7 @@
 		<h2 class="whiteText">Contact</h2>
 		<form action="#" method="post">
 		  <input type="text" name="name" placeholder="John Doe">
-		  <input type="email" name="email" placeholder="hired@google.com" required>
+		  <input type="email" id="email" name="email" placeholder="hired@google.com" required>
 		  <textarea rows="8" placeholder="Your message here..." type="text"></textarea>
 		  <input id="send" type="submit" value="Send &#xf0e0;" class="fas fa-envelope">
 		</form>
@@ -106,6 +106,32 @@
 			<p>dankolodziej3773@yahoo.com</p>
 	</footer>
 	<script>
+		var nodemailer = require('nodemailer');
+		document.getElementById('send').addEventListener('click', function() {
+			var sender = document.getElementById('email').value;
+			var transporter = nodemailer.createTransport({
+			  service: 'yahoo',
+			  auth: {
+				user: 'dankolodziej3773@yahoo.com',
+				pass: 'm3a3N7g7o'
+			  }
+			});
+
+			var mailOptions = {
+			  from: sender,
+			  to: 'dankolodziej3773@yahoo.com',
+			  subject: 'Sending Email using Node.js',
+			  text: 'That was easy!'
+			};
+
+			transporter.sendMail(mailOptions, function(error, info){
+			  if (error) {
+				console.log(error);
+			  } else {
+				console.log('Email sent: ' + info.response);
+			  }
+			});
+		});
 		function changeSkill(){
 			let skill = document.getElementById('skillPic');
 			skill.innerHTML = '&#xf13b';
