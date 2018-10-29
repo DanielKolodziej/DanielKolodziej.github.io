@@ -20,7 +20,7 @@
 				$msgClass = 'alert-danger';
 			} else {
 				// Passed
-				$toEmail = 'support@traversymedia.com';
+				$toEmail = 'dankolodziej3773@yahoo.com';
 				$subject = 'Contact Request From '.$name;
 				$body = '<h2>Contact Request</h2>
 					<h4>Name</h4><p>'.$name.'</p>
@@ -65,7 +65,7 @@
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="mailer.php">My Website</a>
+				<a class="navbar-brand" href="contactMe.php">My Website</a>
 			</div>
 		</div>
 	</nav>
