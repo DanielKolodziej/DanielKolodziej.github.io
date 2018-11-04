@@ -238,7 +238,7 @@ header {
   margin-top: 70px;
   background-image: url("pictures/editedMe.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   position: relative;
   color: white;

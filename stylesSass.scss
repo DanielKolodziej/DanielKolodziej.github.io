@@ -192,7 +192,8 @@ header{
 	margin-top: 70px;
 	background-image: url("pictures/editedMe.jpg");
   	background-position: center;
-	background-repeat: no-repeat;
+	//background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	//opacity: 0.8;
 	position: relative;
