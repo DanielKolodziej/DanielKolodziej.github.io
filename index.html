@@ -21,7 +21,7 @@
 				<li><a href="#skill">Skills</a></li>
 				<li><a href="#school">Education</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="contactMe.php">Contact</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -93,7 +93,7 @@
 	</div>
 	<a id="topBtn" href="#about"><div id="upArrow" class="fas fa-arrow-alt-circle-up"></div></a>
 	<div id="contact">
-		<h2 class="whiteText">Contact</h2>
+		<h2 class="whiteText">Contact Example</h2>
 		<form action="#" method="post">
 		  <input type="text" name="name" placeholder="John Doe">
 		  <input type="email" id="email" name="email" placeholder="hired@google.com" required>
@@ -129,7 +129,7 @@
 		setInterval(changeSkill, 6000);
 		
 		document.getElementById('changeText').addEventListener('click', function() {
-			let val = document.getElementById('modify').innerText;
+			let val = document.getElementById('modify').textContent;
 			function replaceAllOccurrences(string, toBeReplaced, replaceWith) {
 			  return string.split(toBeReplaced).join(replaceWith);
 			};
@@ -142,10 +142,10 @@
 				return string;
 			};
 			setTimeout(function(){
-					document.getElementById('modify').innerText = encode(val);
+					document.getElementById('modify').textContent = encode(val);
 				}, 250);
 			setTimeout(function(){
-					document.getElementById('modify').innerText = val;
+					document.getElementById('modify').textContent = val;
 				}, 4000);
 		});
 		document.getElementById('reverseText').addEventListener('click', function() {
