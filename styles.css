@@ -72,7 +72,6 @@ body p {
   text-align: center;
   margin: 0 auto;
   min-width: 310px;
-  width: 60%;
   font-family: "Exo", sans-serif;
 }
 
@@ -103,9 +102,10 @@ header {
 
 h1 {
   display: inline;
+  color: #C7C6C6;
   float: left;
   font-size: 2em;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-shadow: 1px 1px 2px black, 0 0 25px #FE015E, 0 0 5px red;
 }
 
 nav li {
@@ -185,18 +185,20 @@ nav li a:hover {
   background-color: #eee;
 }
 
-#skill {
-  min-width: 324px;
+#portfolio {
+  background-color: #8D7CFE;
 }
-#skill ul {
-  min-width: 324px;
-  width: 50%;
-  background: rgba(21, 21, 21, 0.3);
+
+#skill {
+  background-color: #101010;
+}
+#skill h2 {
+  color: #C7C6C6;
 }
 #skill h3 {
   font-family: "Exo", sans-serif;
   font-weight: bold;
-  font-size: 1.15em;
+  font-size: 1.25em;
 }
 #skill li i {
   text-align: center;
@@ -211,15 +213,58 @@ nav li a:hover {
 }
 #skill li {
   padding: 20px;
-  overflow: auto;
+  overflow: hidden;
   border: 0.25px solid #090A10;
   min-width: 324px;
-}
-#skill li:hover {
-  background: rgba(21, 21, 21, 0.5);
+  width: 400px;
+  height: 100px;
 }
 
-#school li {
+.skill-item:nth-child(1) {
+  margin-left: 13%;
+  background-color: #1e1428;
+}
+.skill-item:nth-child(1):hover {
+  background: #51366c;
+}
+.skill-item:nth-child(1) h3, .skill-item:nth-child(1) p {
+  color: #f9f9f9;
+}
+
+.skill-item:nth-child(2) {
+  margin-left: 26%;
+  background-color: #3c2850;
+}
+.skill-item:nth-child(2):hover {
+  background: #6f4a94;
+}
+.skill-item:nth-child(2) h3, .skill-item:nth-child(2) p {
+  color: #f8f8f8;
+}
+
+.skill-item:nth-child(3) {
+  margin-left: 39%;
+  background-color: #5a3c78;
+}
+.skill-item:nth-child(3):hover {
+  background: #8d67b3;
+}
+.skill-item:nth-child(3) h3, .skill-item:nth-child(3) p {
+  color: #f7f7f7;
+}
+
+.skill-item:nth-child(4) {
+  margin-left: 52%;
+  background-color: #7850a0;
+}
+.skill-item:nth-child(4):hover {
+  background: #ab8fc7;
+}
+.skill-item:nth-child(4) h3, .skill-item:nth-child(4) p {
+  color: #f6f6f6;
+}
+
+#school ul li {
   text-align: center;
   line-height: 2em;
   font-family: "Exo", sans-serif;
@@ -238,22 +283,27 @@ nav li a:hover {
   position: relative;
   color: white;
 }
+#about p {
+  padding: 10px 10%;
+}
 #about #self {
   border: 2px solid #FE015E;
   border-radius: 50%;
+  display: block;
+  min-width: 150px;
+  height: 30%;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .tranBox {
   background-color: rgba(21, 21, 21, 0.8);
   min-height: 600px;
+  padding-bottom: 40px;
 }
 
 span {
   color: #FE015E;
-}
-
-#skill, #portfolio {
-  background-color: #8D7CFE;
 }
 
 h2 {
@@ -264,14 +314,6 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-}
-
-#self {
-  display: block;
-  min-width: 150px;
-  height: 30%;
-  width: 20%;
-  margin: 0 auto;
 }
 
 #portfolio a {
@@ -293,6 +335,7 @@ h3 {
 }
 #contact h2 {
   margin-top: 40px;
+  color: #C7C6C6;
 }
 #contact p {
   padding: 10px;
@@ -306,7 +349,7 @@ h3 {
   color: #090A10;
 }
 
-#skill, #school, #portfolio, #contact {
+#school, #portfolio, #contact {
   min-height: 400px;
   display: flex;
   flex-direction: column;
@@ -320,9 +363,6 @@ footer {
 footer p {
   display: block;
   text-align: center;
-}
-
-.whiteText {
   color: #C7C6C6;
 }
 
@@ -347,6 +387,19 @@ footer p {
 
   nav li a {
     padding: 8px 10px;
+  }
+
+  #skill li p {
+    font-size: 0.72em;
+    line-height: 1.6em;
+  }
+  #skill li i {
+    padding: 0 7px 0 0;
+    font-size: 90px;
+  }
+  #skill li {
+    padding: 10px;
+    width: 330px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -392,7 +445,12 @@ footer p {
   }
   #skill li {
     padding: 4px;
-    min-width: 315px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #school li p {
+    font-size: 1em;
   }
 }
 

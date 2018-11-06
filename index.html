@@ -11,9 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<!-- icon of website in browser tab-->
 	<link rel="icon" href="pictures/logotemp2Comp.jpg">
+	<!-- https://daneden.github.io/animate.css/ -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 </head>
 <body>
-	<header class="whiteText">
+	<header>
 		<h1>Daniel Kolodziej's Resume</h1>
 		<nav>
 			<ul>
@@ -43,42 +45,50 @@
 		</div>
 	</div>
 	<div id="skill">
-	<h2>Skills</h2>
-	  <ul>
-		<li>
-		  <i id="skillPic" class="fab"></i>
-		  <h3>Proficient in:</h3>
-		  <p>HTML5, CSS3/Sass, JavaScript, jQuery, AngularJS, MySQL, Git</p>
-		</li>
-		  
-		<li>
-		  <i class="fas fa-laptop-code"></i>
-		  <h3>Experience using:</h3>
-		  <p>Java, MongoDB, Node/Express, Python, AutoCad</p>
-		</li>
-	 
-		<li>
-		  <i class="fas fa-chalkboard-teacher"></i>
-		  <h3>Cross-Functional:</h3>
-		  <p>Functioned in roles including <span>UI/UX Designer</span>, <span>Web Developer</span>, and <span>Project Manager</span>.</p>
-		</li>
-	 
-		<li>
-		  <i class="fas fa-book"></i>
-		  <h3>CRISC:</h3>
-		  <p>Understanding of risk and information systems control</p>
-		</li>
-	  </ul>
+		<h2>Skills</h2>
+		<ul>
+			<li class="skill-item animated slideInLeft">
+			  <i id="skillPic" class="fab"></i>
+			  <h3>Proficient in:</h3>
+			  <p>HTML5, CSS3/Sass, JavaScript, jQuery, AngularJS, MySQL, Git</p>
+			</li>
+			  
+			<li class="skill-item animated slideInLeft">
+			  <i class="fas fa-laptop-code"></i>
+			  <h3>Experience using:</h3>
+			  <p>Java, MongoDB, Node/Express, Python, AutoCad</p>
+			</li>
+		 
+			<li class="skill-item animated slideInLeft">
+			  <i class="fas fa-chalkboard-teacher"></i>
+			  <h3>Cross-Functional:</h3>
+			  <p>Functioned in roles including <span>UI/UX Designer</span>, <span>Web Developer</span>, and <span>Project Manager</span>.</p>
+			</li>
+		 
+			<li class="skill-item animated slideInLeft">
+			  <i class="fas fa-book"></i>
+			  <h3>CRISC:</h3>
+			  <p>Understanding of risk and information systems control</p>
+			</li>
+		</ul>
 	</div>
 	<div id="school">
 		<h2>Education <i class="fas fa-graduation-cap"></i></h2>
 		<ul>
-			<li>Dates of Attendance :   8/24/2014  To 8/15/2018</li>
-			<li>Illinois Institute of Technology  Chicago, Illinois</li>
-			<li>GPA <span>3.70</span>, Bachelor’s Degree</li>
-			<li>Major: Information Technology &amp; Management</li>
-			<li>Minor: Industrial Technology &amp; Management</li>
-			<li>Specialization: Web Design &amp; Application Development</li>
+			<li class="school-item it1">
+				<p>Dates of Attendance :   8/24/2014  To 8/15/2018</p>
+				<p>Illinois Institute of Technology  Chicago, Illinois</p>
+			</li>
+			<li class="school-item it2">
+				<p>GPA <span>3.70</span>, Bachelor’s Degree</p>
+			</li>
+			<li class="school-item it3">
+				<p>Major: Information Technology &amp; Management</p>
+				<p>Minor: Industrial Technology &amp; Management</p>
+			</li>
+			<li class="school-item it4">
+				<p>Specialization: Web Design &amp; Application Development</p>
+			</li>
 		</ul>
 	</div>
 	<div id="portfolio">
@@ -91,11 +101,11 @@
 	</div>
 	<a id="topBtn" href="#about"><div id="upArrow" class="fas fa-arrow-alt-circle-up"></div></a>
 	<div id="contact">
-		<h2 class="whiteText">Contact Me <i class="fas fa-envelope"></i></h2>
+		<h2>Contact Me <i class="fas fa-envelope"></i></h2>
 		<p>Email: dankolodziej3773@yahoo.com</p>
 		<p>Mobile: (773)899-5473</p>
 	</div>	
-	<footer class="whiteText">
+	<footer>
 			<p>Daniel Kolodziej &copy;2018</p>
 	</footer>
 	<script>
