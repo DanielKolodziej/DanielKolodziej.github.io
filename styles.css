@@ -291,6 +291,9 @@ h3 {
   background-color: #1B1A26;
   line-height: 1.5em;
 }
+#contact h2 {
+  margin-top: 40px;
+}
 #contact p {
   padding: 10px;
   width: 180px;
