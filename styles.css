@@ -64,26 +64,20 @@ table {
 /*-----------------^reset^--------------*/
 h1, h2 {
   font-family: "Orbitron", sans-serif;
-  text-align: center;
 }
 
 body p {
   font-size: 1.15em;
   line-height: 2.5em;
   text-align: center;
-  display: block;
   margin: 0 auto;
-  min-width: 320px;
+  min-width: 310px;
   width: 60%;
   font-family: "Exo", sans-serif;
 }
 
 #hackerrankLogo, #gitLogo, #downloadLogo, #codecademyLogo {
   font-size: 30px;
-}
-
-#send {
-  font-size: 20px;
 }
 
 #upArrow {
@@ -98,13 +92,29 @@ body p {
   color: #FE015E;
 }
 
+header {
+  background-color: #090A10;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+h1 {
+  display: inline;
+  float: left;
+  font-size: 2em;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
 nav li {
   float: right;
 }
 nav li a {
   display: block;
   color: white;
-  padding: 14px 20px;
+  padding: 8px 15px;
   text-decoration: none;
 }
 nav li a:hover {
@@ -135,8 +145,7 @@ nav li a:hover {
 
 #out, #in {
   border: 1px solid #FE015E;
-  text-indent: 5px;
-  color: black;
+  text-indent: 1px;
 }
 
 .weather {
@@ -180,7 +189,6 @@ nav li a:hover {
   min-width: 324px;
 }
 #skill ul {
-  margin: 0 auto;
   min-width: 324px;
   width: 50%;
   background: rgba(21, 21, 21, 0.3);
@@ -192,10 +200,10 @@ nav li a:hover {
 }
 #skill li i {
   text-align: center;
-  width: 122px;
+  width: 120px;
   font-size: 100px;
   float: left;
-  padding: 0 10px 0 0;
+  padding: 0 15px 0 0;
 }
 #skill li p {
   font-size: 0.9em;
@@ -204,7 +212,7 @@ nav li a:hover {
 #skill li {
   padding: 20px;
   overflow: auto;
-  border: 0.25px solid #0A023F;
+  border: 0.25px solid #090A10;
   min-width: 324px;
 }
 #skill li:hover {
@@ -214,26 +222,15 @@ nav li a:hover {
 #school li {
   text-align: center;
   line-height: 2em;
-  margin: 0 auto;
   font-family: "Exo", sans-serif;
   min-width: 280px;
-  width: 60%;
   background-color: #E3E3FE;
   margin-bottom: 20px;
   border-radius: 25px;
 }
 
-header {
-  background-color: #090A10;
-  padding: 15px 10px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
-}
-
 #about {
-  margin-top: 70px;
+  margin-top: 50px;
   background-image: url("https://cdn-images-1.medium.com/max/1280/1*PtODALXguz1KOB3XEwihPQ.jpeg");
   background-position: center;
   background-attachment: fixed;
@@ -259,15 +256,10 @@ span {
   background-color: #8D7CFE;
 }
 
-h1 {
-  font-size: 2em;
-  float: left;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-
 h2 {
   font-size: 1.85em;
   padding: 20px 0;
+  text-align: center;
 }
 
 h3 {
@@ -276,17 +268,17 @@ h3 {
 
 #self {
   display: block;
-  min-width: 200px;
+  min-width: 150px;
   height: 30%;
   width: 20%;
   margin: 0 auto;
 }
 
 #portfolio a {
+  line-height: 2.5em;
   display: block;
-  margin: 0 auto;
-  min-width: 240px;
-  width: 20%;
+  text-align: center;
+  width: 230px;
   text-decoration: none;
   font-size: 1.1em;
   font-family: "Dosis", sans-serif;
@@ -295,22 +287,8 @@ h3 {
   color: #FE015E;
 }
 
-#portfolio {
-  line-height: 2.5em;
-  padding: 10px 0;
-}
-#portfolio a {
-  display: block;
-  text-align: center;
-  min-width: 240px;
-  width: 20%;
-}
-
 #contact {
-  padding-top: 100px;
-  padding-bottom: 10px;
   background-color: #1B1A26;
-  width: 100%;
   line-height: 1.5em;
 }
 #contact p {
@@ -325,6 +303,14 @@ h3 {
   color: #090A10;
 }
 
+#skill, #school, #portfolio, #contact {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   background-color: #090A10;
 }
@@ -333,12 +319,8 @@ footer p {
   text-align: center;
 }
 
-.whiteText, input, textarea {
+.whiteText {
   color: #C7C6C6;
-}
-
-#send:hover {
-  background-color: #FE015E;
 }
 
 @keyframes bounce {
@@ -355,22 +337,16 @@ footer p {
     transform: translateY(-10px);
   }
 }
-textarea:focus, input:focus {
-  outline-color: cyan;
-  outline-style: inset;
-  outline-width: 0.05px;
-}
-
 @media (max-width: 950px) {
   h1 {
-    font-size: 1.5em;
+    font-size: 1.65em;
   }
 
   nav li a {
-    padding: 14px 14px;
+    padding: 8px 10px;
   }
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 750px) {
   h1 {
     display: none;
   }
@@ -388,9 +364,6 @@ textarea:focus, input:focus {
     font-size: 0.9em;
   }
 
-  #about {
-    margin-top: 50px;
-  }
   #about p {
     font-size: 1em;
     line-height: 2em;

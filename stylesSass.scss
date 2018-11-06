@@ -7,27 +7,24 @@ $highlight-color: #FE015E;
 $white-color: #C7C6C6;
 $gray-color: #F4F4F4;
 $black-color: #090A10;
+
 h1, h2{
 	font-family: $font-orbit;
-	text-align: center;
 }
 
 body p{
 	font-size: 1.15em;
 	line-height: 2.5em;
 	text-align: center;
-	display: block;
 	margin: 0 auto;
-	min-width: 320px;
+	min-width: 310px;
 	width: 60%;
 	font-family: $font-exo;
 }
 #hackerrankLogo, #gitLogo, #downloadLogo, #codecademyLogo{
 	font-size: 30px;
 }
-#send{
-	font-size: 20px;
-}
+
 #upArrow{
 	font-size: 90px;
 	z-index: 5;
@@ -40,6 +37,23 @@ body p{
 		color: $highlight-color;
 	}
 }
+
+header{
+	background-color: $black-color;
+	padding: 15px 0;
+	position: fixed; 
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+
+h1{
+	display: inline;
+	float: left;
+	font-size: 2em;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
 //start nav list
 nav{
 	li {
@@ -49,7 +63,7 @@ nav{
 	li a {
 	    display: block;
 	    color: white;
-	    padding: 14px 20px;
+	    padding: 8px 15px;
 	    text-decoration: none;
 	    &:hover{
 	    	color: $highlight-color;
@@ -80,8 +94,7 @@ nav{
 }
 #out, #in{
   	border: 1px solid $highlight-color;
-  	text-indent: 5px;
-  	color: black;
+  	text-indent: 1px;
  }
 .weather{
 	padding: 4px;
@@ -97,7 +110,7 @@ nav{
 	  	position: relative;
 	  	border: 1px solid #282828;
  	}
-	 #cityIcon{
+	#cityIcon{
 	  	background: #D5D5D5;
 	  	position: absolute;
 	  	margin-left: -114px;
@@ -123,7 +136,6 @@ nav{
 #skill{
 	min-width: 324px;
 	ul {
-	    margin: 0 auto;
 	    min-width: 324px;
 		width: 50%;
 		background: rgba(21,21,21, .3),
@@ -136,10 +148,10 @@ nav{
 	  }
 	  li i {
 	  	text-align: center;
-	  	width: 122px;
+	  	width: 120px;
 	  	font-size: 100px;
 	  	float: left;
-	    padding: 0 10px 0 0;
+	    padding: 0 15px 0 0;
 	  }
 	   
 	  li p {
@@ -150,12 +162,12 @@ nav{
 	  li {
 	    padding: 20px;
 	    overflow: auto;
-	    border: 0.25px solid #0A023F;
+	    border: 0.25px solid $black-color;
 	    min-width: 324px;
-	  }
-	   
-	  li:hover {
-	    background: rgba(21,21,21, .5),
+
+	    &:hover{
+	    	background: rgba(21,21,21, .5);
+	    }
 	  }
 }
 //end skills list
@@ -163,30 +175,18 @@ nav{
 	li {
 	text-align: center;
 	line-height: 2em; 
-	margin: 0 auto;
 	font-family: $font-exo;
 	min-width: 280px;
-	width: 60%;
 	background-color: #E3E3FE;
 	margin-bottom: 20px;
 	border-radius: 25px;
 	}
 }
 
-header{
-	background-color: $black-color;
-	padding: 15px 10px;
-	position: fixed; 
-	width: 100%;
-	top: 0;
-	z-index: 10;
-}
-
 #about {
-	margin-top: 70px;
+	margin-top: 50px;
 	background-image: url("https://cdn-images-1.medium.com/max/1280/1*PtODALXguz1KOB3XEwihPQ.jpeg");
   	background-position: center;
-	//background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
@@ -208,15 +208,10 @@ span {
 	background-color: #8D7CFE;
 }
 
-h1{
-	font-size: 2em;
-	float: left;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-
 h2 {
 	font-size: 1.85em;
 	padding: 20px 0;
+	text-align: center;
 }
 
 h3{
@@ -225,39 +220,28 @@ h3{
 
 #self {
 	display: block;
-	min-width: 200px;
+	min-width: 150px;
 	height: 30%;
 	width: 20%;
 	margin: 0 auto;
 }
-#portfolio a {
-	display: block;
-	margin: 0 auto;
-	min-width: 240px;
-	width: 20%;
-	text-decoration: none;
-	font-size: 1.1em;
-	font-family: $font-dosis;
-	&:hover{
-		color: $highlight-color;
+#portfolio {
+	a {
+		line-height: 2.5em;
+		display: block;
+		text-align: center;
+		width: 230px;
+		text-decoration: none;
+		font-size: 1.1em;
+		font-family: $font-dosis;
+		&:hover{
+			color: $highlight-color;
+		}
 	}
 }
 
-#portfolio{
-	line-height: 2.5em;
-	padding: 10px 0;
-	a {
-	display: block;
-	text-align: center;
-	min-width: 240px;
-	width: 20%;
-	}
-}
 #contact{
-	padding-top: 100px;
-	padding-bottom: 10px;
 	background-color: #1B1A26;
-	width: 100%;
 	line-height: 1.5em;
 	p{
 		padding: 10px;
@@ -272,6 +256,14 @@ h3{
 	}
 }
 
+#skill, #school, #portfolio, #contact{
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 footer {
 	background-color: $black-color;
 	p{
@@ -279,12 +271,8 @@ footer {
 	text-align: center;
 	}
 }
-.whiteText, input, textarea {
+.whiteText {
 	color: $white-color;
-}
-
-#send:hover{
-	background-color: $highlight-color;
 }
 
 @keyframes bounce {
@@ -304,26 +292,20 @@ footer {
 	}
 }
 
-textarea:focus, input:focus {
-	outline-color: cyan;
-	outline-style: inset;
-	outline-width: .05px;
-
-}
 $breakpoint-bighead: 950px;
 @media (max-width: $breakpoint-bighead){
 	h1{
-		font-size: 1.5em;
+		font-size: 1.65em;
 	}
 	nav {
 		li{
 			a{
-				padding: 14px 14px;
+				padding: 8px 10px;
 			}
 		}
 	}
 }
-$breakpoint-phone: 760px;
+$breakpoint-phone: 750px;
 //, (orientation: portrait)
 @media only screen and (max-width: $breakpoint-phone) {
 	h1{
@@ -342,7 +324,6 @@ $breakpoint-phone: 760px;
 		}
 	}
 	#about {
-		margin-top: 50px;
 		p{
 			font-size: 1em;
 			line-height: 2em;
@@ -372,5 +353,5 @@ $breakpoint-phone: 760px;
 	    padding: 4px;
 	    min-width: 315px;
 	  }
-}
+	}
 }
