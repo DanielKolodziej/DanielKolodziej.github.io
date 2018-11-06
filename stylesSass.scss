@@ -9,7 +9,6 @@ $gray-color: #F4F4F4;
 $black-color: #090A10;
 h1, h2{
 	font-family: $font-orbit;
-	text-decoration: underline;
 	text-align: center;
 }
 
@@ -50,7 +49,6 @@ nav{
 	li a {
 	    display: block;
 	    color: white;
-	    text-align: center;
 	    padding: 14px 20px;
 	    text-decoration: none;
 	    &:hover{
@@ -62,8 +60,6 @@ nav{
 .buttons{
 	margin: 0 auto;
 	text-align: center;
-  	//background: $gray-color;//rgba(0, 0, 0, .1);
-  	//border-bottom: 1px solid rgba(0, 0, 0, .1);
   	padding: 7px;
   	margin-top: 20px;
 	button{
@@ -83,7 +79,7 @@ nav{
 	}
 }
 #out, #in{
-  	border: 1px solid black;
+  	border: 1px solid $highlight-color;
   	text-indent: 5px;
   	color: black;
  }
@@ -95,8 +91,6 @@ nav{
 	margin: 0 auto;
 	border-radius: 25px;
 	color: black;
-	//position: absolute;
-	//left: 25%;
 	#city{
 	  	text-indent: 22px;
 	  	color: black;
@@ -132,7 +126,7 @@ nav{
 	    margin: 0 auto;
 	    min-width: 324px;
 		width: 50%;
-		background: rgba(20,20,20, .4),
+		background: rgba(21,21,21, .3),
 	  }
 	   
 	  h3 {
@@ -161,7 +155,7 @@ nav{
 	  }
 	   
 	  li:hover {
-	    background: rgba(20,20,20, .5),
+	    background: rgba(21,21,21, .5),
 	  }
 }
 //end skills list
@@ -190,19 +184,21 @@ header{
 
 #about {
 	margin-top: 70px;
-	background-image: url("pictures/editedMe.jpg");
+	background-image: url("https://cdn-images-1.medium.com/max/1280/1*PtODALXguz1KOB3XEwihPQ.jpeg");
   	background-position: center;
 	//background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	//opacity: 0.8;
 	position: relative;
 	color: white;
-	min-height: 400px;
+	#self{
+		border: 2px solid $highlight-color;
+		border-radius: 50%;
+	}
 }
 .tranBox{
-	background-color: rgba(0,0,0,0.7);
-	min-height: 400px;
+	background-color: rgba(21,21,21,0.8);
+	min-height: 600px;
 }
 span {
 	color: $highlight-color;
@@ -259,27 +255,23 @@ h3{
 }
 #contact{
 	padding-top: 100px;
-	padding-bottom: 15px;
+	padding-bottom: 10px;
 	background-color: #1B1A26;
 	width: 100%;
 	line-height: 1.5em;
+	p{
+		padding: 10px;
+		width: 180px;
+		border: 2px #fff solid;
+		margin-top: 10px;
+		color: $white-color;
+		&:hover{
+			background-color: $highlight-color;
+			color: $black-color;
+		}
+	}
 }
 
-form {
-	display:block;
-	min-width: 280px;
-	width: 50%;
-	margin: 0 auto;
-}
-
-form input, textarea{
-	width: 100%;
-	background-color: #12121A;
-	margin: 2px 0;
-	padding: 4px 2px;
-	resize: none;
-	outline: none;
-}
 footer {
 	background-color: $black-color;
 	p{
@@ -289,6 +281,10 @@ footer {
 }
 .whiteText, input, textarea {
 	color: $white-color;
+}
+
+#send:hover{
+	background-color: $highlight-color;
 }
 
 @keyframes bounce {

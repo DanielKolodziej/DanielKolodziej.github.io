@@ -64,7 +64,6 @@ table {
 /*-----------------^reset^--------------*/
 h1, h2 {
   font-family: "Orbitron", sans-serif;
-  text-decoration: underline;
   text-align: center;
 }
 
@@ -105,7 +104,6 @@ nav li {
 nav li a {
   display: block;
   color: white;
-  text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
@@ -136,7 +134,7 @@ nav li a:hover {
 }
 
 #out, #in {
-  border: 1px solid black;
+  border: 1px solid #FE015E;
   text-indent: 5px;
   color: black;
 }
@@ -185,7 +183,7 @@ nav li a:hover {
   margin: 0 auto;
   min-width: 324px;
   width: 50%;
-  background: rgba(20, 20, 20, 0.4);
+  background: rgba(21, 21, 21, 0.3);
 }
 #skill h3 {
   font-family: "Exo", sans-serif;
@@ -210,7 +208,7 @@ nav li a:hover {
   min-width: 324px;
 }
 #skill li:hover {
-  background: rgba(20, 20, 20, 0.5);
+  background: rgba(21, 21, 21, 0.5);
 }
 
 #school li {
@@ -236,18 +234,21 @@ header {
 
 #about {
   margin-top: 70px;
-  background-image: url("pictures/editedMe.jpg");
+  background-image: url("https://cdn-images-1.medium.com/max/1280/1*PtODALXguz1KOB3XEwihPQ.jpeg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
   color: white;
-  min-height: 400px;
+}
+#about #self {
+  border: 2px solid #FE015E;
+  border-radius: 50%;
 }
 
 .tranBox {
-  background-color: rgba(0, 0, 0, 0.7);
-  min-height: 400px;
+  background-color: rgba(21, 21, 21, 0.8);
+  min-height: 600px;
 }
 
 span {
@@ -307,26 +308,21 @@ h3 {
 
 #contact {
   padding-top: 100px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   background-color: #1B1A26;
   width: 100%;
   line-height: 1.5em;
 }
-
-form {
-  display: block;
-  min-width: 280px;
-  width: 50%;
-  margin: 0 auto;
+#contact p {
+  padding: 10px;
+  width: 180px;
+  border: 2px #fff solid;
+  margin-top: 10px;
+  color: #C7C6C6;
 }
-
-form input, textarea {
-  width: 100%;
-  background-color: #12121A;
-  margin: 2px 0;
-  padding: 4px 2px;
-  resize: none;
-  outline: none;
+#contact p:hover {
+  background-color: #FE015E;
+  color: #090A10;
 }
 
 footer {
@@ -339,6 +335,10 @@ footer p {
 
 .whiteText, input, textarea {
   color: #C7C6C6;
+}
+
+#send:hover {
+  background-color: #FE015E;
 }
 
 @keyframes bounce {
