@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import projIMG from './images/DashMobile.PNG';
 import projIMG2 from './images/DashSearchMobile.PNG';
 import projIMG3 from './images/DashAnalyticMobile.PNG';
+import projIMG4 from './images/DashAnalyticMobile.PNG';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { makeStyles } from '@material-ui/core/styles';
@@ -54,8 +55,13 @@ const Projects = () => {
         },
         {
             img: projIMG3,
-            title: "Job Applications",
+            title: "Help Desk Glossary",
             desc: "This section will be for a short description for each project3 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+        },
+        {
+            img: projIMG4,
+            title: "Job Applications",
+            desc: "This section will be for a short description for each project4 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
         },
     ];
     const arrowStyles = {
@@ -111,7 +117,6 @@ const Projects = () => {
         
             <Grid item xs={12} md={6}>
                 <Carousel 
-                    // statusFormatter={(current, total) => `Current slide: ${current} / Total: ${total}`}
                     statusFormatter={(current, total) => {
                         setCount(current -1);
                         return `Current slide: ${current} / Total: ${total}`}}
