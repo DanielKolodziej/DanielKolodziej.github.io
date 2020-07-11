@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import projIMG from './images/DashMobile.PNG';
-import projIMG2 from './images/DashSearchMobile.PNG';
-import projIMG3 from './images/DashAnalyticMobile.PNG';
-import projIMG4 from './images/DashAnalyticMobile.PNG';
+import projIMG2 from './images/messengerApp.PNG';
+import projIMG3 from './images/databaseIT.PNG';
+import projIMG4 from './images/jobApplications.PNG';
+import projIMG5 from './images/weatherApp.PNG';
+import projIMG6 from './images/noteApp.PNG';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { makeStyles } from '@material-ui/core/styles';
@@ -46,22 +48,32 @@ const Projects = () => {
         {
             img: projIMG,
             title: "SIMPLYFIT",
-            desc: "This section will be for a short description for each project app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            desc: "This section will be for a short description for SF project app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
         },
         {
             img: projIMG2,
-            title: "Weather App",
-            desc: "This section will be for a short description for each project2 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            title: "Messenger App",
+            desc: "This section will be for a short description for MA project2 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
         },
         {
             img: projIMG3,
             title: "Help Desk Glossary",
-            desc: "This section will be for a short description for each project3 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            desc: "This section will be for a short description for HDG project3 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
         },
         {
             img: projIMG4,
             title: "Job Applications",
-            desc: "This section will be for a short description for each project4 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            desc: "This section will be for a short description for JA project4 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+        },
+        {
+            img: projIMG5,
+            title: "Weather Search",
+            desc: "This section will be for a short description for WS project4 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+        },
+        {
+            img: projIMG6,
+            title: "Note Taker",
+            desc: "This section will be for a short description for NT project4 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
         },
     ];
     const arrowStyles = {
@@ -91,7 +103,8 @@ const Projects = () => {
     return (
         <Grid container className={classes.background}>
 
-            <Grid container 
+            <Grid 
+            container 
             direction="column" 
             direction="column" 
             justify="space-between" 
@@ -164,7 +177,7 @@ const Projects = () => {
                     infiniteLoop={true}>
                     {projectsArr.map((itm, index) =>(
                         <div key={index}>
-                            <img src={itm.img} alt={`${itm.title} project`}/>
+                            <img src={itm.img} alt={`${itm.title} project`} style={{minWidth: '200px', minHeight: '400px', maxHeight: '400px', }}/>
                             <p className='legend'>{itm.title}</p>
                         </div>
                     ))}
