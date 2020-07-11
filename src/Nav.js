@@ -23,17 +23,17 @@ const Nav = () => {
             justify="flex-end" 
             alignItems="center">
             <Grid item>
-                <Typography variant="a" component="a" className={classes.links}>
+                <Typography variant="button" component="a" className={classes.links}>
                     Projects
                 </Typography> 
             </Grid>
             <Grid item>
-                <Typography variant="a" component="a" className={classes.links}>
+                <Typography variant="button" component="a" className={classes.links}>
                     Skills
                 </Typography> 
             </Grid>
             <Grid item>
-                <Typography variant="a" component="a" className={classes.links}>
+                <Typography variant="button" component="a" className={classes.links}>
                     About Me
                 </Typography> 
             </Grid>
