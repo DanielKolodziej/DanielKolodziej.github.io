@@ -12,10 +12,6 @@ const useStyles = makeStyles({
     title: {
         backgroundColor: '#fff',
     },
-    list: {
-        color: '#fff',
-        padding: '1em 0'
-    }
   });
 
 const About = () => {

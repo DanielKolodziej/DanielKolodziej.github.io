@@ -26,10 +26,11 @@ const useStyles = makeStyles({
     carouselContainer: {
         width: '80%',
         maxWidth: '480px',
-        margin: '0 auto',
+        margin: '1em auto 1em auto',
         '& > div':{
           borderBottom: '4px solid #00ffa8',
           borderRight: '4px solid #00ffa8',
+        //   marginBottom: '3em'
         },
         '& .carousel-slider':{
         overflow: 'visible',
@@ -48,32 +49,32 @@ const Projects = () => {
         {
             img: projIMG,
             title: "SIMPLYFIT",
-            desc: "This section will be for a short description for SF project app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            desc: "This is a fitness tracker app with user authentication.  Users have the ability to log and view workout data, search past logs of themselves or others, and track bodyweight. Built using React and Firebase"
         },
         {
             img: projIMG2,
-            title: "Messenger App",
-            desc: "This section will be for a short description for MA project2 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            title: "Message App",
+            desc: "This is a message commucication web app.  Users can log in to view, create, and delete messages between themselves and any other user.  Built using React and Firebase"
         },
         {
             img: projIMG3,
             title: "Help Desk Glossary",
-            desc: "This section will be for a short description for HDG project3 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            desc: "This is a help desk glossary intended for use by either IT staff or general users.  Users can log in and depending on their status can potentially view, edit, create, and delete instructional posts dealing with various IT issues. Built using React, Node/Express, MongoDB."
         },
         {
             img: projIMG4,
             title: "Job Applications",
-            desc: "This section will be for a short description for JA project4 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            desc: "This is a job application tracking web app.  You can view, add, edit, delete, and search through job listings you've applied for.  Built using Javascript, HTML, CSS/SASS, localstorage"
         },
         {
             img: projIMG5,
             title: "Weather Search",
-            desc: "This section will be for a short description for WS project4 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            desc: "This is a weather search web app that allows you enter any city name in order to retrieve a detailed weather report over the course of the new fews days of that city.  Built using React."
         },
         {
             img: projIMG6,
             title: "Note Taker",
-            desc: "This section will be for a short description for NT project4 app listed within the gallery.  Info on purpose, technology, and function.  Button below potentially will go to git repo of said currently being displayed within gallery slideshow."
+            desc: "This is a little note taking application that allows you to add, edit, and delete notes that you have created. Built using React"
         },
     ];
     const arrowStyles = {

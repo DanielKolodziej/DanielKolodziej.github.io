@@ -4,7 +4,6 @@ import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 
 const useStyles = makeStyles({
     background: {
-        // marginTop: '3em',
         padding: '2em 1em 2em 1em',
         height: '100vh',
         backgroundImage: 'linear-gradient( 180deg, #090909 0%, #00ffa8 100%)',
@@ -14,7 +13,6 @@ const useStyles = makeStyles({
     },
     list: {
         color: '#fff',
-        padding: '1em 0'
     }
   });
 
@@ -44,7 +42,7 @@ const Skills = () => {
                 </Typography>
                 <ul>
                     {skillsList.map((itm, index) => (
-                        <li key={index} className={classes.list}>
+                        <li key={index} className={classes.list} style={{padding: isMobile ? '0.25em' : '1em'}}>
                             {itm}
                         </li>
                     ))}
@@ -56,7 +54,7 @@ const Skills = () => {
             <Grid container direction="column" alignItems="flex-end" justify="flex-end">
                 <ul dir='rtl'>
                     {educationList.map((itm, index) => (
-                        <li key={index} className={classes.list}>
+                        <li key={index} className={classes.list} style={{padding: isMobile ? '0.25em' : '1em'}}>
                             {itm}
                         </li>
                     ))}
