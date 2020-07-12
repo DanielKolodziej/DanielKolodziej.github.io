@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     },
     links: {
         color: '#fff',
-        marginRight: '2em',
+        marginRight: '1.5em',
     },
     menuBtn: {
         zIndex: 5,
