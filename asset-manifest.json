@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/DanielKolodziej.github.io/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/DanielKolodziej.github.io/static/js/main.bab5a395.chunk.js",
+    "main.js.map": "/DanielKolodziej.github.io/static/js/main.bab5a395.chunk.js.map",
+    "runtime-main.js": "/DanielKolodziej.github.io/static/js/runtime-main.6b75b9af.js",
+    "runtime-main.js.map": "/DanielKolodziej.github.io/static/js/runtime-main.6b75b9af.js.map",
+    "static/css/2.fb346933.chunk.css": "/DanielKolodziej.github.io/static/css/2.fb346933.chunk.css",
+    "static/js/2.adca986c.chunk.js": "/DanielKolodziej.github.io/static/js/2.adca986c.chunk.js",
+    "static/js/2.adca986c.chunk.js.map": "/DanielKolodziej.github.io/static/js/2.adca986c.chunk.js.map",
+    "index.html": "/DanielKolodziej.github.io/index.html",
+    "precache-manifest.71bfbdf55912144d83ebe29fc2ed85b1.js": "/DanielKolodziej.github.io/precache-manifest.71bfbdf55912144d83ebe29fc2ed85b1.js",
+    "service-worker.js": "/DanielKolodziej.github.io/service-worker.js",
+    "static/css/2.fb346933.chunk.css.map": "/DanielKolodziej.github.io/static/css/2.fb346933.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/DanielKolodziej.github.io/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.adca986c.chunk.js.LICENSE.txt": "/DanielKolodziej.github.io/static/js/2.adca986c.chunk.js.LICENSE.txt",
+    "static/media/DashMobile.PNG": "/DanielKolodziej.github.io/static/media/DashMobile.f1cb97cd.PNG",
+    "static/media/databaseIT.PNG": "/DanielKolodziej.github.io/static/media/databaseIT.fe4b48cb.PNG",
+    "static/media/jobApplications.PNG": "/DanielKolodziej.github.io/static/media/jobApplications.f07360b4.PNG",
+    "static/media/me.jpg": "/DanielKolodziej.github.io/static/media/me.55bf1f20.jpg",
+    "static/media/messengerApp.PNG": "/DanielKolodziej.github.io/static/media/messengerApp.f7bcd153.PNG",
+    "static/media/noteApp.PNG": "/DanielKolodziej.github.io/static/media/noteApp.502d8f95.PNG",
+    "static/media/weatherApp.PNG": "/DanielKolodziej.github.io/static/media/weatherApp.746db13d.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b75b9af.js",
+    "static/css/2.fb346933.chunk.css",
+    "static/js/2.adca986c.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.bab5a395.chunk.js"
+  ]
+}
