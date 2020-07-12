@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import projIMG from './images/DashMobile.PNG';
 import projIMG2 from './images/messengerApp.PNG';
 import projIMG3 from './images/databaseIT.PNG';
@@ -41,9 +41,12 @@ const useStyles = makeStyles({
       },
   });
 
-const Projects = () => {
+const Projects = ({
+    refSection1
+}) => {
     const classes = useStyles();
     const isMobile = useMediaQuery('(max-width: 844px)');
+    // const refSection1 = useRef()
     const [count, setCount] = useState(0);
     const projectsArr = [
         {
@@ -102,7 +105,7 @@ const Projects = () => {
     };
 
     return (
-        <Grid container className={classes.background}>
+        <Grid container className={classes.background} ref={refSection1}>
 
             <Grid 
             container 

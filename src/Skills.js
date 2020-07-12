@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 
@@ -16,9 +16,12 @@ const useStyles = makeStyles({
     }
   });
 
-const Skills = () => {
+const Skills = ({
+    refSection2
+}) => {
     const classes = useStyles();
     const isMobile = useMediaQuery('(max-width: 844px)');
+    // const refSection2 = useRef()
     const skillsList = [
         'Front End Development: React, JavaScript, HTML5, CSS3/Sass',
         'Back End Development: Node/Express, Firebase, MongoDB, Python',
@@ -34,7 +37,7 @@ const Skills = () => {
         'Specialization: Web Design & Application Development',
     ]
   return (
-    <Grid container className={classes.background}>
+    <Grid container className={classes.background} ref={refSection2}>
         <Grid item xs={12} sm={6}>
             <Grid container direction="column" alignItems="flex-start">
                 <Typography variant="h2" component="h2" className={classes.title}>

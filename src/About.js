@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 import meIMG from './images/me.jpg';
@@ -14,11 +14,14 @@ const useStyles = makeStyles({
     },
   });
 
-const About = () => {
+const About = ({
+    refSection3
+}) => {
     const classes = useStyles();
+    // const refSection3 = useRef()
     const isMobile = useMediaQuery('(max-width: 844px)');
   return (
-    <Grid container className={classes.background}>
+    <Grid container className={classes.background} ref={refSection3}>
         <Grid item xs={12} sm={6}>
             <img src={meIMG} style={{width: '90%'}}/>
         </Grid>
