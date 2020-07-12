@@ -12,7 +12,10 @@ const useStyles = makeStyles({
     },
     links: {
         color: '#fff',
-        paddingRight: '0.5em'
+        paddingRight: '0.5em',
+        '&:hover':{
+          color: '#00ffa8',
+        },
     },
   });
 
@@ -27,9 +30,9 @@ const Footer = () => {
           </Typography> 
       </Grid>
       <Grid item>
-        <GitHubIcon className={classes.links}/>
-        <LinkedInIcon className={classes.links}/>
-        <DescriptionIcon className={classes.links}/>
+        <a href="https://github.com/DanielKolodziej" target="_blank"><GitHubIcon className={classes.links}/></a>
+        <a href="https://www.linkedin.com/in/daniel-kolodziej-08a548141/" target="_blank"><LinkedInIcon className={classes.links}/></a>
+        <a href="Kolodziej_Daniel_Resume.docx" download><DescriptionIcon className={classes.links}/></a>
       </Grid>
     </Grid>
   );
