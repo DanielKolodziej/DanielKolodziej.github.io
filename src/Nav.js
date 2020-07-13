@@ -1,7 +1,7 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { MenuItem, MenuList, Button, Paper, Typography, IconButton, Grid, useMediaQuery } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import { MenuItem, MenuList, Paper, Typography, IconButton, Grid, useMediaQuery } from '@material-ui/core';
+// import MenuIcon from '@material-ui/icons/Menu';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
 import Popper from '@material-ui/core/Popper';

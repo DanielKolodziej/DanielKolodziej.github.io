@@ -1,8 +1,7 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 import meIMG from './images/me.jpg';
-import projIMG from './images/DashMobile.PNG';
 
 const useStyles = makeStyles({
     background: {
@@ -18,12 +17,11 @@ const About = ({
     refSection3
 }) => {
     const classes = useStyles();
-    // const refSection3 = useRef()
-    const isMobile = useMediaQuery('(max-width: 844px)');
+    // const isMobile = useMediaQuery('(max-width: 844px)');
   return (
     <Grid container className={classes.background} ref={refSection3}>
         <Grid item xs={12} sm={6}>
-            <img src={meIMG} style={{width: '90%'}}/>
+            <img src={meIMG} style={{width: '90%'}} alt="Daniel Kolodziej"/>
         </Grid>
         <Grid item xs={12} sm={6}>
                 <Typography variant="h2" component="h2" className={classes.title}>

@@ -129,7 +129,7 @@ const Projects = ({
             direction="column" 
             justify="space-between" 
             alignItems="flex-start"
-            xs={12} md={6}
+            // xs={12} md={6}
             style={{
                 maxHeight: '500px',
                 }}>

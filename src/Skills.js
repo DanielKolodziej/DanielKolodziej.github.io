@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 
@@ -21,7 +21,6 @@ const Skills = ({
 }) => {
     const classes = useStyles();
     const isMobile = useMediaQuery('(max-width: 844px)');
-    // const refSection2 = useRef()
     const skillsList = [
         'Front End Development: React, JavaScript, HTML5, CSS3/Sass',
         'Back End Development: Node/Express, Firebase, MongoDB, Python',

@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 
 const Footer = () => {
   const classes = useStyles();
-  const isMobile = useMediaQuery('(max-width: 924px)');
+  // const isMobile = useMediaQuery('(max-width: 924px)');
   return (
     <Grid container className={classes.background} justify='space-between'>
       <Grid item>
@@ -31,8 +31,8 @@ const Footer = () => {
           </Typography> 
       </Grid>
       <Grid item>
-        <a href="https://github.com/DanielKolodziej" target="_blank"><GitHubIcon className={classes.links}/></a>
-        <a href="https://www.linkedin.com/in/daniel-kolodziej-08a548141/" target="_blank"><LinkedInIcon className={classes.links}/></a>
+        <a href="https://github.com/DanielKolodziej" rel="noopener"><GitHubIcon className={classes.links}/></a>
+        <a href="https://www.linkedin.com/in/daniel-kolodziej-08a548141/" rel="noopener"><LinkedInIcon className={classes.links}/></a>
         <a href={resume} download><DescriptionIcon className={classes.links}/></a>
       </Grid>
     </Grid>
