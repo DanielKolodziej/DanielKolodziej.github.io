@@ -60,7 +60,7 @@ const Hero = () => {
         <Grid 
             container 
             className={classes.background} 
-            justify={isMobile ? "start" : "center"}
+            justify={isMobile ? "flex-start" : "center"}
             direction="column"
             alignItems="flex-end">
             <animated.svg 

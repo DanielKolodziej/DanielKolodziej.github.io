@@ -20,7 +20,7 @@ const useStyles = makeStyles({
         minHeight: '100vh',
         backgroundColor: '#090909',
         color: '#fff',
-        '& > div > div': {
+        '& > div > div > div': {
             marginBottom: '1.5em',
           },
     },
@@ -120,15 +120,15 @@ const Projects = ({
     };
 
     return (
-        <Grid container className={classes.background} ref={refSection1}>
-
-            <Grid 
-            container 
-            direction="column" 
-            justify="space-between" 
-            alignItems="flex-start"
-            style={{
-                maxHeight: '500px',
+        <Grid container alignItems="center" className={classes.background} ref={refSection1}>
+            <Grid item xs={12} md={6}>
+                <Grid 
+                container 
+                direction="column" 
+                justify="space-between" 
+                alignItems="flex-start"
+                style={{
+                    maxHeight: '500px',
                 }}>
                 <Grid item>
                     <Typography variant="h2" component="h2" className={classes.title}>
@@ -159,6 +159,7 @@ const Projects = ({
                     <Typography variant="body1" component="p">
                         {projectsArr[count].desc}
                     </Typography> 
+                </Grid>
                 </Grid>
             </Grid>
         
