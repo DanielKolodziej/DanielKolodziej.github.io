@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     },
     links: {
         color: '#fff',
-        marginRight: '1.5em',
+        marginLeft: '1.5em',
         cursor: 'pointer',
         '&:hover': {
           textDecoration: 'underline solid #00ffa8',
@@ -117,7 +117,6 @@ const Nav = ({
                  className={classes.menuBtn}
                  component="span">
                  {/* <MenuIcon fontSize='large' style={{color: 'red'}}/> */}
-                 {/* style={{ fontSize: 40, color: 'blue' }} */}
                  <SvgIcon style={{ fontSize: 35,}}>
                     <rect x="1" y="1" width="25" height="2" style={{stroke: '#00ffa8', strokeWidth: 2}} />
                     <rect x="0" y="1" width="22" height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
@@ -148,45 +147,6 @@ const Nav = ({
             </>
         ): null}
     </>
-            // <>
-            //      <IconButton 
-            //      ref={anchorRef}
-            //      aria-controls={menuVisible ? 'menu-list-grow' : undefined}
-            //      aria-haspopup="true"
-            //      onClick={handleMenuToggle}
-            //      aria-label="menu" 
-            //      className={classes.menuBtn}
-            //      component="span">
-            //      {/* <MenuIcon fontSize='large' style={{color: 'red'}}/> */}
-            //      {/* style={{ fontSize: 40, color: 'blue' }} */}
-            //      <SvgIcon style={{ fontSize: 35}}>
-            //         <rect x="1" y="1" width="25" height="2" style={{stroke: '#00ffa8', strokeWidth: 2}} />
-            //         <rect x="0" y="1" width="22" height="1" style={{stroke: '#090909', strokeWidth: 2}} />
-            //         <rect x="1" y="8" width="25" height="2" style={{stroke: '#00ffa8', strokeWidth: 2}} />
-            //         <rect x="0" y="8" width="22" height="1" style={{stroke: '#090909', strokeWidth: 2}} />
-            //         <rect x="1" y="15" width="25" height="2" style={{stroke: '#00ffa8', strokeWidth: 2}} />
-            //         <rect x="0" y="15" width="22" height="1" style={{stroke: '#090909', strokeWidth: 2}} />
-            //     </SvgIcon>
-            //     </IconButton>
-            //     <Popper open={menuVisible} style={{zIndex: '1'}} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
-            //      {({ TransitionProps, placement }) => (
-            //        <Grow
-            //          {...TransitionProps}
-            //          style={{ transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom' }}
-            //        >
-            //          <Paper>
-            //            <ClickAwayListener onClickAway={handleClose}>
-            //              <MenuList autoFocusItem={menuVisible} id="menu-list-grow">
-            //                <MenuItem onClick={(e) => handleScroll(e)}>Projects</MenuItem>
-            //                <MenuItem onClick={(e) => handleScroll(e)}>Skills</MenuItem>
-            //                <MenuItem onClick={(e) => handleScroll(e)}>About Me</MenuItem>
-            //              </MenuList>
-            //            </ClickAwayListener>
-            //          </Paper>
-            //        </Grow>
-            //      )}
-            //     </Popper>
-            // </>
     );
 }
 

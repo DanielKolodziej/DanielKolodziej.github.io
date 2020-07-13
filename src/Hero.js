@@ -10,13 +10,13 @@ const useStyles = makeStyles({
         height: 'calc(100vh - 56px)',
     },
     upper: {
-        fontSize: '9em',
+        fontSize: '8.5em',
         // zIndex: 5,
     },
     lower: {
         color: '#fff',
         backgroundColor: '#000',
-        fontSize: '9em',
+        fontSize: '8.5em',
         // zIndex: 15,
     },
     graphic: {
