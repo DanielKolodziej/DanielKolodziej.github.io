@@ -4,20 +4,16 @@ import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 import {useTransition, useSpring, animated, config} from 'react-spring'
 const useStyles = makeStyles({
     background: {
-        // marginTop: '3em',
         padding: '2em 1em 2em 1em',
-        // height: '100vh',
         height: 'calc(100vh - 56px)',
     },
     upper: {
         fontSize: '8.5em',
-        // zIndex: 5,
     },
     lower: {
         color: '#fff',
         backgroundColor: '#000',
         fontSize: '8.5em',
-        // zIndex: 15,
     },
     graphic: {
         position: 'absolute',
