@@ -36,7 +36,7 @@ const Skills = ({
         'Specialization: Web Design & Application Development',
     ]
   return (
-    <Grid container className={classes.background} ref={refSection2}>
+    <Grid container alignItems="center" className={classes.background} ref={refSection2}>
         <Grid item xs={12} sm={6}>
             <Grid container direction="column" alignItems="flex-start">
                 <Typography variant="h2" component="h2" className={classes.title}>
