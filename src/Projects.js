@@ -17,12 +17,14 @@ import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 const useStyles = makeStyles({
     background: {
         padding: '2em',
-        height: '100vh',
+        minHeight: '100vh',
         backgroundColor: '#090909',
         color: '#fff',
+        '& > div > div': {
+            marginBottom: '1.5em',
+          },
     },
     title:{
-        // backgroundImage: 'linear-gradient( 180deg, #090909 25%, #545454 130%)',
         backgroundColor: '#00ffa8',
     },
     button: {
@@ -125,11 +127,12 @@ const Projects = ({
             <Grid 
             container 
             direction="column" 
-            direction="column" 
             justify="space-between" 
             alignItems="flex-start"
             xs={12} md={6}
-            style={{maxHeight: '500px'}}>
+            style={{
+                maxHeight: '500px',
+                }}>
                 <Grid item>
                     <Typography variant="h2" component="h2" className={classes.title}>
                     PROJECTS.
@@ -143,7 +146,7 @@ const Projects = ({
                 {
                     projectsArr[count].live? (
                         <Grid item>
-                            <a href={projectsArr[count].live} target="_blank" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<GitHubIcon />}>
+                            <a href={projectsArr[count].live} target="_blank" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<DesktopWindowsIcon />}>
                                 View Live
                             </Button></a>
                 </Grid>
