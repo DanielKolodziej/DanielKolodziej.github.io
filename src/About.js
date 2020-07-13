@@ -30,7 +30,7 @@ const About = ({
                     About Me.
                 </Typography> 
                 <Typography variant="body1" component="p">
-                    My passion is in designing, developing, and deploying web applications.  I would make a great addition to your team because of my willingness to embrace changing technologies, collaborate with others, and take on rewarding challenges.
+                    My passion is in designing, developing, and deploying web applications.  I would make a great addition to your team because of my willingness to embrace changing technologies, collaborate with others, and take on rewarding challenges. Contact info, social links, and resume found below.
                 </Typography> 
         </Grid>
     </Grid>

@@ -4,6 +4,7 @@ import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import DescriptionIcon from '@material-ui/icons/Description';
+import { resume } from './images/Kolodziej_Daniel_Resume.docx';
 
 const useStyles = makeStyles({
     background: {
@@ -32,7 +33,7 @@ const Footer = () => {
       <Grid item>
         <a href="https://github.com/DanielKolodziej" target="_blank"><GitHubIcon className={classes.links}/></a>
         <a href="https://www.linkedin.com/in/daniel-kolodziej-08a548141/" target="_blank"><LinkedInIcon className={classes.links}/></a>
-        <a href="Kolodziej_Daniel_Resume.docx" download><DescriptionIcon className={classes.links}/></a>
+        <a href={resume} download><DescriptionIcon className={classes.links}/></a>
       </Grid>
     </Grid>
   );
