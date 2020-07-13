@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { MenuItem, MenuList, Paper, Typography, IconButton, Grid, useMediaQuery } from '@material-ui/core';
+import { MenuItem, MenuList, Button, Paper, Typography, IconButton, Grid, useMediaQuery } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import ClickAwayListener from '@material-ui/core/ClickAwayListener';
 import Grow from '@material-ui/core/Grow';
@@ -16,16 +16,16 @@ const useStyles = makeStyles({
     links: {
         color: '#fff',
         marginRight: '1.5em',
+        cursor: 'pointer',
+        '&:hover': {
+          textDecoration: 'underline solid #00ffa8',
+        },
     },
     menuBtn: {
         zIndex: 5,
-        color: '#000',
         position: 'fixed',
         top: 0,
         right: 0,
-        '&:hover': {
-          color: '#ffc324',
-        },
       },
   });
 
@@ -52,20 +52,21 @@ const Nav = ({
       };
 
       const handleScroll = (e) => {
+          console.log(e.target.innerText)
         //.current is verification that your element has rendered
-          if(refSection1.current && e.target.innerText === 'Projects'){
+          if(refSection1.current && e.target.innerText.toLowerCase() === 'projects'){
             refSection1.current.scrollIntoView({ 
                  behavior: "smooth", 
                  block: "nearest"
               })
           }
-          else if(refSection2.current && e.target.innerText === 'Skills'){
+          else if(refSection2.current && e.target.innerText.toLowerCase() === 'skills'){
             refSection2.current.scrollIntoView({ 
                  behavior: "smooth", 
                  block: "nearest"
               })
           }
-          else if(refSection3.current && e.target.innerText === 'About Me'){
+          else if(refSection3.current && e.target.innerText.toLowerCase() === 'about me'){
                 refSection3.current.scrollIntoView({ 
                      behavior: "smooth", 
                      block: "nearest"
@@ -89,19 +90,18 @@ const Nav = ({
             className={classes.background} 
             justify="flex-end" 
             alignItems="center">
-                {/* {console.log(inView)} */}
             <Grid item>
-                <Typography variant="button" component="a" className={classes.links}>
+                <Typography onClick={(e) => handleScroll(e)} variant="button" component="a" className={classes.links}>
                     Projects
                 </Typography> 
             </Grid>
             <Grid item>
-                <Typography variant="button" component="a" className={classes.links}>
+                <Typography onClick={(e) => handleScroll(e)} variant="button" component="a" className={classes.links}>
                     Skills
                 </Typography> 
             </Grid>
             <Grid item>
-                <Typography variant="button" component="a" className={classes.links}>
+                <Typography onClick={(e) => handleScroll(e)} variant="button" component="a" className={classes.links}>
                     About Me
                 </Typography> 
             </Grid>
@@ -118,13 +118,13 @@ const Nav = ({
                  component="span">
                  {/* <MenuIcon fontSize='large' style={{color: 'red'}}/> */}
                  {/* style={{ fontSize: 40, color: 'blue' }} */}
-                 <SvgIcon style={{ fontSize: 35}}>
+                 <SvgIcon style={{ fontSize: 35,}}>
                     <rect x="1" y="1" width="25" height="2" style={{stroke: '#00ffa8', strokeWidth: 2}} />
-                    <rect x="0" y="1" width="22" height="1" style={{stroke: '#090909', strokeWidth: 2}} />
+                    <rect x="0" y="1" width="22" height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
                     <rect x="1" y="8" width="25" height="2" style={{stroke: '#00ffa8', strokeWidth: 2}} />
-                    <rect x="0" y="8" width="22" height="1" style={{stroke: '#090909', strokeWidth: 2}} />
+                    <rect x="0" y="8" width="22" height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
                     <rect x="1" y="15" width="25" height="2" style={{stroke: '#00ffa8', strokeWidth: 2}} />
-                    <rect x="0" y="15" width="22" height="1" style={{stroke: '#090909', strokeWidth: 2}} />
+                    <rect x="0" y="15" width="22" height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
                 </SvgIcon>
                 </IconButton>
                 <Popper open={menuVisible} style={{zIndex: '1'}} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
