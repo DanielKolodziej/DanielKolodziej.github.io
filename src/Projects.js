@@ -8,9 +8,11 @@ import projIMG6 from './images/noteApp.PNG';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Grid, IconButton, useMediaQuery } from '@material-ui/core';
+import { Typography, Grid, Button, IconButton, useMediaQuery } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 
 const useStyles = makeStyles({
     background: {
@@ -22,6 +24,13 @@ const useStyles = makeStyles({
     title:{
         // backgroundImage: 'linear-gradient( 180deg, #090909 25%, #545454 130%)',
         backgroundColor: '#00ffa8',
+    },
+    button: {
+        textDecoration: 'none',
+        backgroundColor: '#00ffa8',
+        padding: '0.75em',
+        color: '#090909',
+        borderRadius: 3,
     },
     carouselContainer: {
         width: '80%',
@@ -51,33 +60,39 @@ const Projects = ({
     const projectsArr = [
         {
             img: projIMG,
-            title: "SIMPLYFIT",
-            desc: "This is a fitness tracker app with user authentication.  Users have the ability to log and view workout data, search past logs of themselves or others, and track bodyweight. Built using React and Firebase"
+            title: "SimplyFit",
+            desc: "This is a fitness tracker app with user authentication.  Users have the ability to log and view workout data, search past logs of themselves or others, and track bodyweight. Built using React and Firebase",
+            live: "http://simply-fit.dkolodz1.vercel.app",
         },
         {
             img: projIMG2,
             title: "Message App",
-            desc: "This is a message commucication web app.  Users can log in to view, create, and delete messages between themselves and any other user.  Built using React and Firebase"
+            desc: "This is a message commucication web app.  Users can log in to view, create, and delete messages between themselves and any other user.  Built using React and Firebase",
+            repo: "https://github.com/DanielKolodziej/messengerApp",
         },
         {
             img: projIMG3,
             title: "Help Desk Glossary",
-            desc: "This is a help desk glossary intended for use by either IT staff or general users.  Users can log in and depending on their status can potentially view, edit, create, and delete instructional posts dealing with various IT issues. Built using React, Node/Express, MongoDB."
+            desc: "This is a help desk glossary intended for use by either IT staff or general users.  Users can log in and depending on their status can potentially view, edit, create, and delete instructional posts dealing with various IT issues. Built using React, Node/Express, MongoDB.",
+            repo: "https://github.com/DanielKolodziej/iDatabaseIT",
         },
         {
             img: projIMG4,
             title: "Job Applications",
-            desc: "This is a job application tracking web app.  You can view, add, edit, delete, and search through job listings you've applied for.  Built using Javascript, HTML, CSS/SASS, localstorage"
+            desc: "This is a job application tracking web app.  You can view, add, edit, delete, and search through job listings you've applied for.  Built using Javascript, HTML, CSS/SASS, localstorage",
+            repo: "https://github.com/DanielKolodziej/jobApplications",
         },
         {
             img: projIMG5,
             title: "Weather Search",
-            desc: "This is a weather search web app that allows you enter any city name in order to retrieve a detailed weather report over the course of the new fews days of that city.  Built using React."
+            desc: "This is a weather search web app that allows you enter any city name in order to retrieve a detailed weather report over the course of the new fews days of that city.  Built using React.",
+            repo: "https://github.com/DanielKolodziej/weather_app",
         },
         {
             img: projIMG6,
             title: "Note Taker",
-            desc: "This is a little note taking application that allows you to add, edit, and delete notes that you have created. Built using React"
+            desc: "This is a little note taking application that allows you to add, edit, and delete notes that you have created. Built using React",
+            repo: "https://github.com/DanielKolodziej/evernoteApp",
         },
     ];
     const arrowStyles = {
@@ -121,10 +136,25 @@ const Projects = ({
                     </Typography> 
                 </Grid>
                 <Grid item>
-                    <Typography variant="subtitle1" component="p">
-                    {/* App Name */}{projectsArr[count].title}
+                    <Typography variant="h6" component="h6" style={{textDecoration: 'underline solid #00ffa8'}}>
+                        {projectsArr[count].title}
                     </Typography> 
                 </Grid>
+                {
+                    projectsArr[count].live? (
+                        <Grid item>
+                            <a href={projectsArr[count].live} target="_blank" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<GitHubIcon />}>
+                                View Live
+                            </Button></a>
+                </Grid>
+                    ) : (
+                        <Grid item>
+                            <a href={projectsArr[count].repo} target="_blank" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<GitHubIcon />}>
+                                View Repo
+                            </Button></a>
+                        </Grid>
+                    )
+                }
                 <Grid item>
                     <Typography variant="body1" component="p">
                         {projectsArr[count].desc}
