@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, useMediaQuery } from '@material-ui/core';
-import {useTransition, useSpring, animated, config} from 'react-spring'
+import {useSpring, animated} from 'react-spring'
 const useStyles = makeStyles({
     background: {
         padding: '2em 1em 2em 1em',

@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
 import projIMG from './images/DashMobile.PNG';
 import projIMG2 from './images/messengerApp.PNG';
 import projIMG3 from './images/databaseIT.PNG';
@@ -41,7 +41,6 @@ const useStyles = makeStyles({
         '& > div':{
           borderBottom: '4px solid #00ffa8',
           borderRight: '4px solid #00ffa8',
-        //   marginBottom: '3em'
         },
         '& .carousel-slider':{
         overflow: 'visible',
@@ -57,7 +56,6 @@ const Projects = ({
 }) => {
     const classes = useStyles();
     const isMobile = useMediaQuery('(max-width: 844px)');
-    // const refSection1 = useRef()
     const [count, setCount] = useState(0);
     const projectsArr = [
         {
@@ -129,7 +127,6 @@ const Projects = ({
             direction="column" 
             justify="space-between" 
             alignItems="flex-start"
-            // xs={12} md={6}
             style={{
                 maxHeight: '500px',
                 }}>
@@ -146,13 +143,13 @@ const Projects = ({
                 {
                     projectsArr[count].live? (
                         <Grid item>
-                            <a href={projectsArr[count].live} target="_blank" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<DesktopWindowsIcon />}>
+                            <a href={projectsArr[count].live} rel="noopener" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<DesktopWindowsIcon />}>
                                 View Live
                             </Button></a>
                 </Grid>
                     ) : (
                         <Grid item>
-                            <a href={projectsArr[count].repo} target="_blank" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<GitHubIcon />}>
+                            <a href={projectsArr[count].repo} rel="noopener" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<GitHubIcon />}>
                                 View Repo
                             </Button></a>
                         </Grid>
