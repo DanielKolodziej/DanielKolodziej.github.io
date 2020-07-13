@@ -5,7 +5,7 @@ import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 const useStyles = makeStyles({
     background: {
         padding: '2em 1em 2em 1em',
-        height: '100vh',
+        minHeight: '100vh',
         backgroundImage: 'linear-gradient( 180deg, #090909 0%, #00ffa8 100%)',
     },
     title: {
@@ -31,7 +31,7 @@ const Skills = ({
     ]
     const educationList = [
         'Illinois Institute of Technology',
-        '8/24/2014 To 8/15/2018',
+        '8/24/2014-8/15/2018',
         'GPA 3.70, Bachelors Degree',
         'Major: Information Technology & Management',
         'Specialization: Web Design & Application Development',
