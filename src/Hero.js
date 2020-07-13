@@ -6,6 +6,7 @@ const useStyles = makeStyles({
     background: {
         padding: '2em 1em 2em 1em',
         height: 'calc(100vh - 56px)',
+        overflow: 'hidden',
     },
     upper: {
         fontSize: '8.5em',
@@ -21,7 +22,7 @@ const useStyles = makeStyles({
         left: 0,
     },
     graphicText: {
-        fontSize: '5.5px'
+        fontSize: '4px'
     }
     // subtitle: {
     //     transform: 'rotate(60deg)'
@@ -35,10 +36,15 @@ const Hero = () => {
     let polyPoints= "33,100 0,0 66,0";
     let polyPointsMobile= "100,100 0,0 100,0";
     const AnimatedTypography = animated(Typography)
+    // const translateMobile = useSpring({
+    //     to: [{ transform: 'translate3d(-500px,0px,0)'}, { transform: 'translate3d(0px,0px,0px)'},],
+    //     from: { transform: 'translate3d(0px,0px,0px)'},
+    //     config: [{ duration: 2000}, {duration: 1000}]
+    //   })
     const translateMobile = useSpring({
-        to: [{ transform: 'translate3d(-500px,0px,0)'}, { transform: 'translate3d(0px,0px,0px)'},],
+        to: [{ transform: isMobile ? 'translate3d(-500px,0px,0)' : 'translate3d(500px,0px,0)'}, { transform: 'translate3d(0px,0px,0px)'},],
         from: { transform: 'translate3d(0px,0px,0px)'},
-        config: [{ duration: 2000}, {duration: 1000}]
+        config: [{ duration: 1800}, {duration: 1000}]
       })
     const zVal = useSpring({
         to: { zIndex: -1},
@@ -77,10 +83,10 @@ const Hero = () => {
                 isMedium && !isMobile? null : 
                 <animated.text 
                     className={classes.graphicText} 
-                    x={isMobile? "50" : "2"} 
+                    x={isMobile? "67" : "2"} 
                     y={isMobile? "25" : "15"} 
                     transform={isMobile? "rotate(45 21,30)" : "rotate(72 2,20)"}
-                    // style={translateTextMobile}
+                    // style={{fontSize: !isMobile ? "4px" : "3px"}}
                     >Design. Develop. Deploy.</animated.text>
             }
             </animated.svg>
