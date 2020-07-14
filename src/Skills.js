@@ -29,18 +29,17 @@ const Skills = ({
         'Understanding of general coding standards including SEO, cross-browser compatibility, and accessibility basics, and risk and information systems control (CRISC)',
     ]
     const educationList = [
-        'Illinois Institute of Technology',
-        '8/24/2014-8/15/2018',
-        'GPA 3.70, Bachelors Degree',
-        'Major: Information Technology & Management',
+        'Illinois Institute of Technology (2018), GPA: 3.70',
+        'Information Technology & Management, B.S',
         'Specialization: Web Design & Application Development',
+        'Relavant Coursework: Website App Development, Open-Source Intellegent Device, Rich Internet Applications, Network Admin and Operations, Data Modeling and Applications, Open-Source Programming'
     ]
   return (
     <Grid container alignItems="center" className={classes.background} ref={refSection2}>
         <Grid item xs={12} sm={6}>
             <Grid container direction="column" alignItems="flex-start">
                 <Typography variant="h2" component="h2" className={classes.title}>
-                    SKILLS.
+                    SKILLS
                 </Typography>
                 <ul>
                     {skillsList.map((itm, index) => (
@@ -62,7 +61,7 @@ const Skills = ({
                     ))}
                 </ul>
                 <Typography variant="h2" component="h2" className={classes.title}>
-                    .SCHOOL
+                    SCHOOL
                 </Typography> 
             </Grid>
         </Grid>
