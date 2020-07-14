@@ -77,8 +77,29 @@ const Hero = () => {
                 <stop offset="100%" style={{stopColor:'#00ffa8',stopOpacity:1}} />
               </linearGradient>
             </defs>
+            <defs>
+                <pattern id="me" x="0" y="0" width="1" height="1">
+                    <image href={meIMG} width="40" height="60" />
+                </pattern>
+            </defs>
+            <defs>
+                <pattern id="star" viewBox="0,0,10,10" width="10%" height="10%">
+                    {/* <polygon points="3,10 0,0 15,0 4,4" style={{fill: '#fff'}}/> */}
+                    <rect x="0" y="0" width="10" height="5"/>
+                    {/* <image href={meIMG} width="10" height="10" /> */}
+                </pattern>
+            </defs>
             <polygon points={isMobile ? polyPointsMobile : polyPoints} style={{strokeWidth:0,fill: 'url(#grad)', zIndex: 10}} />
-            {/* <text x="50" y="25" transform="rotate(45 20,29)" style={{fontSize: "5.5px"}}>Design. Develop. Deploy.</text> */}
+            {/* <polygon points="" style={{strokeWidth:0,fill: 'red'}}/> */}
+            {/* <use x="0" y="0" href="#poly" fill="url('#test')" /> */}
+            {
+                isMedium && !isMobile? (
+                    <polygon 
+                        points="20,60 0,0 40,0"
+                        style={{fill: "url('#star')"}}
+                    />
+                ) : null
+            }
             {
                 isMedium && !isMobile? null : 
                 <animated.text 
