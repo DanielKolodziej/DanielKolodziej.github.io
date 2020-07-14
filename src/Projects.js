@@ -67,31 +67,31 @@ const Projects = ({
         {
             img: projIMG2,
             title: "Message App",
-            desc: "This is a message commucication web app.  Users can log in to view, create, and delete messages between themselves and any other user.  Built using React and Firebase",
+            desc: "Message commucication web app meant to mimic other communication software such as Slack and Discord.  Users can log in to view, create, and delete messages between themselves and any other user.  Built using React and Firebase",
             repo: "https://github.com/DanielKolodziej/messengerApp",
         },
         {
             img: projIMG3,
             title: "Help Desk Glossary",
-            desc: "This is a help desk glossary intended for use by either IT staff or general users.  Users can log in and depending on their status can potentially view, edit, create, and delete instructional posts dealing with various IT issues. Built using React, Node/Express, MongoDB.",
+            desc: "Help desk glossary where IT staff can create, edit, and delete instructional posts for general users to view. Built using React, Node/Express, MongoDB.",
             repo: "https://github.com/DanielKolodziej/iDatabaseIT",
         },
         {
             img: projIMG4,
             title: "Job Applications",
-            desc: "This is a job application tracking web app.  You can view, add, edit, delete, and search through job listings you've applied for.  Built using Javascript, HTML, CSS/SASS, localstorage",
+            desc: "Used to manage the status of job listings you've applied for.  Built using Javascript, HTML, CSS/SASS, localstorage",
             repo: "https://github.com/DanielKolodziej/jobApplications",
         },
         {
             img: projIMG5,
             title: "Weather Search",
-            desc: "This is a weather search web app that allows you enter any city name in order to retrieve a detailed weather report over the course of the new fews days of that city.  Built using React.",
+            desc: "Users can view a detailed weather forecast for the next few days of any city in the world.  Built using React.",
             repo: "https://github.com/DanielKolodziej/weather_app",
         },
         {
             img: projIMG6,
             title: "Note Taker",
-            desc: "This is a little note taking application that allows you to add, edit, and delete notes that you have created. Built using React",
+            desc: "Note taking application that allows you to add, edit, and delete notes that you have created. Built using React",
             repo: "https://github.com/DanielKolodziej/evernoteApp",
         },
     ];
@@ -167,7 +167,7 @@ const Projects = ({
                 <Carousel 
                     statusFormatter={(current, total) => {
                         setCount(current -1);
-                        return `Current slide: ${current} / Total: ${total}`}}
+                        return `Current: ${current} / Total: ${total}`}}
                     renderArrowPrev={(onClickHandler, hasPrev, label) =>
                     hasPrev && (
                     <IconButton onClick={onClickHandler} title={label} style={{ ...arrowStyles, left: -40 }}>
@@ -208,7 +208,7 @@ const Projects = ({
                 }}
                     showThumbs={false} 
                     className={classes.carouselContainer} 
-                    autoPlay={true} 
+                    autoPlay={false} 
                     infiniteLoop={true}>
                     {projectsArr.map((itm, index) =>(
                         <div key={index}>
