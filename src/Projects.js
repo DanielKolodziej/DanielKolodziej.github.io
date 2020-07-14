@@ -17,7 +17,8 @@ import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
 const useStyles = makeStyles({
     background: {
         padding: '2em',
-        minHeight: '100vh',
+        // minHeight: '100vh',
+        minHeight: 'fit-content',
         backgroundColor: '#090909',
         color: '#fff',
         '& > div > div > div': {
@@ -61,7 +62,7 @@ const Projects = ({
         {
             img: projIMG,
             title: "SimplyFit",
-            desc: "This is a fitness tracker app with user authentication.  Users have the ability to log and view workout data, search past logs of themselves or others, and track bodyweight. Built using React and Firebase",
+            desc: "This is a fitness tracker app with user authentication.  Users have the ability to log and view workout data, search past logs of themselves or others, and track bodyweight. Built using React and Firebase.",
             live: "http://simply-fit.dkolodz1.vercel.app",
         },
         {
@@ -124,38 +125,33 @@ const Projects = ({
             <Grid item xs={12} md={6}>
                 <Grid 
                 container 
-                direction="column" 
-                justify="space-between" 
-                alignItems="flex-start"
-                style={{
-                    maxHeight: '500px',
-                }}>
-                <Grid item>
+                >
+                <Grid item xs={12}>
                     <Typography variant="h2" component="h2" className={classes.title}>
                     PROJECTS.
                     </Typography> 
                 </Grid>
-                <Grid item>
+                <Grid item xs={12}>
                     <Typography variant="h6" component="h6" style={{textDecoration: 'underline solid #00ffa8'}}>
                         {projectsArr[count].title}
                     </Typography> 
                 </Grid>
                 {
                     projectsArr[count].live? (
-                        <Grid item>
+                        <Grid item xs={12}>
                             <a href={projectsArr[count].live} rel="noopener" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<DesktopWindowsIcon />}>
                                 View Live
                             </Button></a>
                 </Grid>
                     ) : (
-                        <Grid item>
+                        <Grid item> xs={12}
                             <a href={projectsArr[count].repo} rel="noopener" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<GitHubIcon />}>
                                 View Repo
                             </Button></a>
                         </Grid>
                     )
                 }
-                <Grid item>
+                <Grid item xs={12}> 
                     <Typography variant="body1" component="p">
                         {projectsArr[count].desc}
                     </Typography> 
@@ -212,7 +208,7 @@ const Projects = ({
                     infiniteLoop={true}>
                     {projectsArr.map((itm, index) =>(
                         <div key={index}>
-                            <img src={itm.img} alt={`${itm.title} project`} style={{minWidth: '200px', minHeight: '400px', maxHeight: '400px', }}/>
+                            <img src={itm.img} alt={`${itm.title} project`}/>
                             <p className='legend'>{itm.title}</p>
                         </div>
                     ))}
