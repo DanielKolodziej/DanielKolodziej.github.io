@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/portfolio/static/js/main.28f98f25.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.28f98f25.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.dcf1d861.chunk.css",
+    "main.js": "/portfolio/static/js/main.94e4133e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.94e4133e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.fb346933.chunk.css": "/portfolio/static/css/2.fb346933.chunk.css",
-    "static/js/2.cde7cd7e.chunk.js": "/portfolio/static/js/2.cde7cd7e.chunk.js",
-    "static/js/2.cde7cd7e.chunk.js.map": "/portfolio/static/js/2.cde7cd7e.chunk.js.map",
+    "static/js/2.23322098.chunk.js": "/portfolio/static/js/2.23322098.chunk.js",
+    "static/js/2.23322098.chunk.js.map": "/portfolio/static/js/2.23322098.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.0159ae499d029ac7f6d9c38b767fb080.js": "/portfolio/precache-manifest.0159ae499d029ac7f6d9c38b767fb080.js",
+    "precache-manifest.a0a1d700524f6bd4b15f77e5c384d0ff.js": "/portfolio/precache-manifest.a0a1d700524f6bd4b15f77e5c384d0ff.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/portfolio/static/css/2.fb346933.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/portfolio/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.cde7cd7e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.cde7cd7e.chunk.js.LICENSE.txt",
+    "static/css/main.dcf1d861.chunk.css.map": "/portfolio/static/css/main.dcf1d861.chunk.css.map",
+    "static/js/2.23322098.chunk.js.LICENSE.txt": "/portfolio/static/js/2.23322098.chunk.js.LICENSE.txt",
     "static/media/DashMobile.PNG": "/portfolio/static/media/DashMobile.6ffce627.PNG",
     "static/media/Kolodziej_Daniel_Resume.docx": "/portfolio/static/media/Kolodziej_Daniel_Resume.d210e519.docx",
     "static/media/databaseIT.PNG": "/portfolio/static/media/databaseIT.099187bc.PNG",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.cde7cd7e.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.28f98f25.chunk.js"
+    "static/js/2.23322098.chunk.js",
+    "static/css/main.dcf1d861.chunk.css",
+    "static/js/main.94e4133e.chunk.js"
   ]
 }
