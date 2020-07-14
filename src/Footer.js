@@ -23,7 +23,7 @@ const useStyles = makeStyles({
       backgroundColor: 'rgba(0,0,0,0)',
       '&>button': {
         color: '#fff',
-        padding: '0 0 0 0.7em', 
+        padding: '0 0 0 0.5em', 
         minWidth: 'max-content',
         '&:hover': {
           color: '#00ffa8'

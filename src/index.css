@@ -23,4 +23,5 @@ html::-webkit-scrollbar-thumb{
       -webkit-border-radius: 10px !important;
       border-radius: 10px !important;
       background: #00ffa8;
+      border: 1px solid black;
 }
