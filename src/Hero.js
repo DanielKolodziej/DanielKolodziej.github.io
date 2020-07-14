@@ -2,19 +2,22 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 import {useSpring, animated} from 'react-spring'
+import meIMG from './images/me.jpg';
+
 const useStyles = makeStyles({
     background: {
-        padding: '2em 1em 2em 1em',
+        padding: '2em 1em',
         height: 'calc(100vh - 56px)',
+        minHeight: '450px',
         overflow: 'hidden',
     },
     upper: {
-        fontSize: '8.5em',
+        fontSize: '8em',
     },
     lower: {
         color: '#fff',
         backgroundColor: '#000',
-        fontSize: '8.5em',
+        fontSize: '8em',
     },
     graphic: {
         position: 'absolute',
@@ -36,11 +39,7 @@ const Hero = () => {
     let polyPoints= "33,100 0,0 66,0";
     let polyPointsMobile= "100,100 0,0 100,0";
     const AnimatedTypography = animated(Typography)
-    // const translateMobile = useSpring({
-    //     to: [{ transform: 'translate3d(-500px,0px,0)'}, { transform: 'translate3d(0px,0px,0px)'},],
-    //     from: { transform: 'translate3d(0px,0px,0px)'},
-    //     config: [{ duration: 2000}, {duration: 1000}]
-    //   })
+
     const translateMobile = useSpring({
         to: [{ transform: isMobile ? 'translate3d(-500px,0px,0)' : 'translate3d(500px,0px,0)'}, { transform: 'translate3d(0px,0px,0px)'},],
         from: { transform: 'translate3d(0px,0px,0px)'},
@@ -60,9 +59,10 @@ const Hero = () => {
         <Grid 
             container 
             className={classes.background} 
-            justify={isMobile ? "flex-start" : "center"}
             direction="column"
-            alignItems="flex-end">
+            justify={isMobile ? "flex-start" : "center"}
+            alignItems="flex-end"
+            >
             <animated.svg 
                 height="100%" 
                 width="100%" 
@@ -110,6 +110,21 @@ const Hero = () => {
                         <Typography variant="h3" component="h3">
                             Design. Develop. Deploy.
                         </Typography> 
+                    </Grid>
+                ) : null
+            }
+            {
+                isMobile? (
+                    <Grid item style={{
+                        position: 'absolute',
+                        bottom: 0,
+                        left: 0, 
+                        margin: '0 0 3em 1em', 
+                        backgroundImage: `url(${meIMG})`,
+                        backgroundSize: 'cover',
+                        height: '150px',
+                        width: '150px',
+                        borderRadius: '50%'}}>
                     </Grid>
                 ) : null
             }
