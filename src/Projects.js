@@ -144,7 +144,7 @@ const Projects = ({
                             </Button></a>
                 </Grid>
                     ) : (
-                        <Grid item> xs={12}
+                        <Grid item xs={12}>
                             <a href={projectsArr[count].repo} rel="noopener" style={{textDecoration: 'none'}}><Button variant="contained" style={{backgroundColor: '#00ffa8'}} startIcon={<GitHubIcon />}>
                                 View Repo
                             </Button></a>
