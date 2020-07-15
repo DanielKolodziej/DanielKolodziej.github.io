@@ -118,12 +118,18 @@ const Nav = ({
                  component="span">
                  {/* <MenuIcon fontSize='large' style={{color: 'red'}}/> */}
                  <SvgIcon style={{ fontSize: 35,}}>
-                    <rect x="1" y="1" width="22" height="2" rx="5" style={{stroke: '#00ffa8', strokeWidth: 2}} />
+                    {/* <rect x="1" y="1" width="22" height="2" rx="5" style={{stroke: '#00ffa8', strokeWidth: 2}} />
                     <rect x="0" y="1" width="22" height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
                     <rect x="1" y="8" width="22" height="2" rx="5" style={{stroke: '#00ffa8', strokeWidth: 2}} />
                     <rect x="0" y="8" width="22" height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
                     <rect x="1" y="15" width="22" height="2" rx="5" style={{stroke: '#00ffa8', strokeWidth: 2}} />
-                    <rect x="0" y="15" width="22" height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
+                    <rect x="0" y="15" width="22" height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} /> */}
+                    <rect x="1" y="1" width="22" height="2" rx="5" style={{stroke: '#00ffa8', strokeWidth: 2}} />
+                    <rect x="1" y="1" width="22" height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
+                    <rect x="4" y="8" width={isMobile? "19" : "18"} height="2" rx="5" style={{stroke: '#00ffa8', strokeWidth: 2}} />
+                    <rect x="3" y="8" width={isMobile? "19" : "18"} height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
+                    <rect x="7" y="15" width={isMobile? "16" : "13"} height="2" rx="5" style={{stroke: '#00ffa8', strokeWidth: 2}} />
+                    <rect x="6" y="15" width={isMobile? "16" : "13"} height="1" rx="2" style={{stroke: '#090909', strokeWidth: 2}} />
                 </SvgIcon>
                 </IconButton>
                 <Popper open={menuVisible} style={{zIndex: '1'}} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
