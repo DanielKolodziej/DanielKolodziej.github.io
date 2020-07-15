@@ -2,7 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 import {useSpring, animated} from 'react-spring'
-import meIMG from './images/me.jpg';
+// import meIMG from './images/me.jpg';
+import portraitIMG from './images/Daniel.jpg'
 
 const useStyles = makeStyles({
     background: {
@@ -79,7 +80,7 @@ const Hero = () => {
             </defs>
             <defs>
                 <pattern id="me" x="0" y="0" width="1" height="1">
-                    <image href={meIMG} width="40" height="60" />
+                    <image href={portraitIMG} width="40" height="60" />
                 </pattern>
             </defs>
             <defs>
@@ -141,7 +142,7 @@ const Hero = () => {
                         bottom: 0,
                         left: 0, 
                         margin: '0 0 3em 1em', 
-                        backgroundImage: `url(${meIMG})`,
+                        backgroundImage: `url(${portraitIMG})`,
                         backgroundSize: 'cover',
                         height: '150px',
                         width: '150px',
