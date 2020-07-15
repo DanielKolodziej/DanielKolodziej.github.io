@@ -93,7 +93,7 @@ const Hero = () => {
             {/* <polygon points="" style={{strokeWidth:0,fill: 'red'}}/> */}
             {/* <use x="0" y="0" href="#poly" fill="url('#test')" /> */}
             {
-                isMedium && !isMobile? (
+                !isMobile? (
                     <polygon 
                         points="20,60 0,0 40,0"
                         style={{fill: "url('#star')"}}
@@ -101,7 +101,7 @@ const Hero = () => {
                 ) : null
             }
             {
-                isMedium && !isMobile? null : 
+                !isMobile? null : 
                 <animated.text 
                     className={classes.graphicText} 
                     x={isMobile? "67" : "2"} 
@@ -126,7 +126,7 @@ const Hero = () => {
                 </AnimatedTypography> 
             </Grid>
             {
-                isMedium && !isMobile? (
+                !isMobile? (
                     <Grid item> 
                         <Typography variant="h3" component="h3">
                             Design. Develop. Deploy.
