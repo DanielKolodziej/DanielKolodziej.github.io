@@ -5,7 +5,7 @@ import meIMG from './images/me.jpg';
 
 const useStyles = makeStyles({
     background: {
-        padding: '2em 1em 2em 1em',
+        padding: '2em',
         height: '100vh',
         // maxHeight: '600px',
         minHeight: '400px',
@@ -19,10 +19,10 @@ const About = ({
     refSection3
 }) => {
     const classes = useStyles();
-    // const isMobile = useMediaQuery('(max-width: 844px)');
+    const isMobile = useMediaQuery('(max-width: 844px)');
   return (
-    <Grid container className={classes.background} ref={refSection3}>
-        <Grid item xs={12} sm={6}>
+    <Grid container className={classes.background} ref={refSection3} direction="row">
+        <Grid item xs={12} sm={6} style={{textAlign: 'center'}}>
             <img src={meIMG} style={{width: '90%', maxWidth: '500px'}} alt="Daniel Kolodziej"/>
         </Grid>
         <Grid item xs={12} sm={6}>
