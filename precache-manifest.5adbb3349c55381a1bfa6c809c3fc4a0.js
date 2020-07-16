@@ -1,43 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "040ccbcc41e465770217f3c893e72c63",
+    "revision": "a173f4b58821ec38022a563a77a6ad9b",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "4b86d21eee227f8d06dc",
+    "revision": "3840f7f17b36640e7a06",
     "url": "/portfolio/static/css/2.fb346933.chunk.css"
   },
   {
-    "revision": "cf56caa1c2c85bdddde8",
+    "revision": "3005d83b11294ffe0c8b",
     "url": "/portfolio/static/css/main.a43868da.chunk.css"
   },
   {
-    "revision": "4b86d21eee227f8d06dc",
-    "url": "/portfolio/static/js/2.d24773b9.chunk.js"
+    "revision": "3840f7f17b36640e7a06",
+    "url": "/portfolio/static/js/2.6810a562.chunk.js"
   },
   {
     "revision": "0bf38cf6c0b51ec69d7a52e8875a6dbf",
-    "url": "/portfolio/static/js/2.d24773b9.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.6810a562.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cf56caa1c2c85bdddde8",
-    "url": "/portfolio/static/js/main.eab27664.chunk.js"
+    "revision": "3005d83b11294ffe0c8b",
+    "url": "/portfolio/static/js/main.ce8f3043.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
     "url": "/portfolio/static/js/runtime-main.209c2d7e.js"
   },
   {
-    "revision": "b5ab46e459c8063fd94f6733a62edd02",
-    "url": "/portfolio/static/media/Daniel.b5ab46e4.jpg"
-  },
-  {
     "revision": "6ffce627384afacb5390e3bdd69b6e26",
     "url": "/portfolio/static/media/DashMobile.6ffce627.PNG"
   },
   {
-    "revision": "e53dd27aee31a2bd1740e8bbc8f806f7",
-    "url": "/portfolio/static/media/Kolodziej_Daniel_Resume.e53dd27a.docx"
+    "revision": "f331c5b3d0661d419eb9b8d5d6a53609",
+    "url": "/portfolio/static/media/Kolodziej_Daniel_Resume.f331c5b3.pdf"
   },
   {
     "revision": "099187bc980a00faf695721ef4ba8c06",
@@ -46,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ec7b33eb0d097f98a7081f987a46bd86",
     "url": "/portfolio/static/media/dk.ec7b33eb.jpg"
-  },
-  {
-    "revision": "d7167beaddf252880200c426ab0e9005",
-    "url": "/portfolio/static/media/dkFilter.d7167bea.jpg"
   },
   {
     "revision": "8c2beb2a8e7200b29901172c6ec1f10b",
