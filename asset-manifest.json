@@ -1,22 +1,26 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.a43868da.chunk.css",
-    "main.js": "/portfolio/static/js/main.a6bacdbd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.a6bacdbd.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.eab27664.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.eab27664.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.fb346933.chunk.css": "/portfolio/static/css/2.fb346933.chunk.css",
-    "static/js/2.63ebff3e.chunk.js": "/portfolio/static/js/2.63ebff3e.chunk.js",
-    "static/js/2.63ebff3e.chunk.js.map": "/portfolio/static/js/2.63ebff3e.chunk.js.map",
+    "static/js/2.d24773b9.chunk.js": "/portfolio/static/js/2.d24773b9.chunk.js",
+    "static/js/2.d24773b9.chunk.js.map": "/portfolio/static/js/2.d24773b9.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.a51045237c3eec92d33d4b59003e9263.js": "/portfolio/precache-manifest.a51045237c3eec92d33d4b59003e9263.js",
+    "precache-manifest.46dfc9b21f8fc107602631aa0c2a7a38.js": "/portfolio/precache-manifest.46dfc9b21f8fc107602631aa0c2a7a38.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.fb346933.chunk.css.map": "/portfolio/static/css/2.fb346933.chunk.css.map",
     "static/css/main.a43868da.chunk.css.map": "/portfolio/static/css/main.a43868da.chunk.css.map",
-    "static/js/2.63ebff3e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.63ebff3e.chunk.js.LICENSE.txt",
+    "static/js/2.d24773b9.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d24773b9.chunk.js.LICENSE.txt",
+    "static/media/Daniel.jpg": "/portfolio/static/media/Daniel.b5ab46e4.jpg",
     "static/media/DashMobile.PNG": "/portfolio/static/media/DashMobile.6ffce627.PNG",
-    "static/media/Kolodziej_Daniel_Resume.docx": "/portfolio/static/media/Kolodziej_Daniel_Resume.d210e519.docx",
+    "static/media/Kolodziej_Daniel_Resume.docx": "/portfolio/static/media/Kolodziej_Daniel_Resume.e53dd27a.docx",
     "static/media/databaseIT.PNG": "/portfolio/static/media/databaseIT.099187bc.PNG",
+    "static/media/dk.jpg": "/portfolio/static/media/dk.ec7b33eb.jpg",
+    "static/media/dkFilter.jpg": "/portfolio/static/media/dkFilter.d7167bea.jpg",
+    "static/media/dkFilter2.jpg": "/portfolio/static/media/dkFilter2.8c2beb2a.jpg",
     "static/media/jobApplications.PNG": "/portfolio/static/media/jobApplications.5768b6a7.PNG",
     "static/media/me.jpg": "/portfolio/static/media/me.55bf1f20.jpg",
     "static/media/messengerApp.PNG": "/portfolio/static/media/messengerApp.12c88218.PNG",
@@ -26,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.63ebff3e.chunk.js",
+    "static/js/2.d24773b9.chunk.js",
     "static/css/main.a43868da.chunk.css",
-    "static/js/main.a6bacdbd.chunk.js"
+    "static/js/main.eab27664.chunk.js"
   ]
 }
