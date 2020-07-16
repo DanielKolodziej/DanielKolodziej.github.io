@@ -3,7 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 import {useSpring, animated} from 'react-spring'
 // import meIMG from './images/me.jpg';
-import portraitIMG from './images/Daniel.jpg'
+import meSmIMG from './images/Daniel.jpg';
+import portraitIMG from './images/dk.jpg';
+import portraitIMG2 from './images/dkFilter.jpg';
+import portraitIMG3 from './images/dkFilter2.jpg';
 
 const useStyles = makeStyles({
     background: {
@@ -26,8 +29,44 @@ const useStyles = makeStyles({
         left: 0,
     },
     graphicText: {
-        fontSize: '4px'
-    }
+        fontSize: '4px',
+        fill: '#fff'
+    },
+    imgContainer: {
+        height: 'calc(100% - 56px)', 
+        width: "33%", 
+        backgroundImage:
+                    `linear-gradient(
+                     rgba(0, 0, 0, 0.45), 
+                     rgba(0, 0, 0, 0.45)
+                    ),
+                    url(${portraitIMG3})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: '50% 35%',
+        backgroundSize: 'cover',
+        zIndex: -1, 
+        position: "absolute", 
+        bottom: '-1px', 
+        left: 0,
+    },
+    imgContainerMobile: {
+        height: 'calc(100% - 56px)', 
+        width: '100%',
+        backgroundImage:
+                    `linear-gradient(
+                     rgba(0, 0, 0, 0.45), 
+                     rgba(0, 0, 0, 0.45)
+                    ),
+                    url(${portraitIMG3})`,
+                    // url(${portraitIMG})`,
+                    // url(${portraitIMG})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        zIndex: -1, 
+        position: "absolute", 
+        bottom: '-1px', 
+        left: 0,
+    },
     // subtitle: {
     //     transform: 'rotate(60deg)'
     // },
@@ -64,6 +103,9 @@ const Hero = () => {
             justify={isMobile ? "flex-start" : "center"}
             alignItems="flex-end"
             >
+                <div className={isMobile ? classes.imgContainerMobile : classes.imgContainer}>
+
+                </div>
             <animated.svg 
                 height="100%" 
                 width="100%" 
@@ -79,20 +121,21 @@ const Hero = () => {
               </linearGradient>
             </defs>
             <defs>
-                <pattern id="me" x="0" y="0" width="1" height="1">
-                    <image href={portraitIMG} width="40" height="60" />
+                <pattern id="me" x="0" y="0" width="100%" height="100%" style={{backgroundPosition: 'left bottom'}}>
+                    <image href={portraitIMG} alt="Daniel Kolodziej" width="33" height="50" preserveAspectRatio="none" style={{backgroundPosition: 'left bottom'}}/>
                 </pattern>
             </defs>
             <defs>
                 <pattern id="star" viewBox="0,0,10,10" width="10%" height="10%">
-                    {/* <polygon points="3,10 0,0 15,0 4,4" style={{fill: '#fff'}}/> */}
                     <rect x="0" y="0" width="10" height="5"/>
-                    {/* <image href={meIMG} width="10" height="10" /> */}
                 </pattern>
             </defs>
+            {/* {
+                !isMobile? (
+                    <polygon points="0,0 0,100 33,100" style={{fill: 'url(#me)', backgroundPosition: 'left bottom'}}/>
+                    ) : null
+            } */}
             <polygon points={isMobile ? polyPointsMobile : polyPoints} style={{strokeWidth:0,fill: 'url(#grad)', zIndex: 10}} />
-            {/* <polygon points="" style={{strokeWidth:0,fill: 'red'}}/> */}
-            {/* <use x="0" y="0" href="#poly" fill="url('#test')" /> */}
             {
                 !isMobile? (
                     <polygon 
@@ -105,9 +148,12 @@ const Hero = () => {
                 !isMobile? null : 
                 <animated.text 
                     className={classes.graphicText} 
-                    x={isMobile? "67" : "2"} 
-                    y={isMobile? "25" : "15"} 
-                    transform={isMobile? "rotate(45 21,30)" : "rotate(72 2,20)"}
+                    // x={isMobile? "67" : "2"} 
+                    // y={isMobile? "25" : "15"} 
+                    // transform={isMobile? "rotate(45 21,30)" : "rotate(72 2,20)"}
+                    x="67" 
+                    y="25"
+                    transform="rotate(45 21,30)"
                     // style={{fontSize: !isMobile ? "4px" : "3px"}}
                     >Design. Develop. Deploy.</animated.text>
             }
@@ -135,21 +181,21 @@ const Hero = () => {
                     </Grid>
                 ) : null
             }
-            {
+            {/* {
                 isMobile? (
                     <Grid item style={{
                         position: 'absolute',
                         bottom: 0,
                         left: 0, 
                         margin: '0 0 3em 1em', 
-                        backgroundImage: `url(${portraitIMG})`,
+                        backgroundImage: `url(${meSmIMG})`,
                         backgroundSize: 'cover',
                         height: '150px',
                         width: '150px',
                         borderRadius: '50%'}}>
                     </Grid>
                 ) : null
-            }
+            } */}
         </Grid>
     );
 }
