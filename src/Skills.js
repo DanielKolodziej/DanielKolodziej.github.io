@@ -5,8 +5,6 @@ import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 const useStyles = makeStyles({
     background: {
         padding: '2em',
-        minHeight: '630px',
-        maxHeight: '750px',
         backgroundImage: 'linear-gradient( 180deg, #090909 0%, #00ffa8 100%)',
     },
     title: {

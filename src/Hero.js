@@ -35,6 +35,7 @@ const useStyles = makeStyles({
     imgContainer: {
         height: 'calc(100% - 56px)', 
         width: "33%", 
+        minHeight: '450px',
         backgroundImage:
                     `linear-gradient(
                      rgba(0, 0, 0, 0.45), 
@@ -46,12 +47,13 @@ const useStyles = makeStyles({
         backgroundSize: 'cover',
         zIndex: -1, 
         position: "absolute", 
-        bottom: '-1px', 
+        // bottom: '-1px', 
         left: 0,
     },
     imgContainerMobile: {
         height: 'calc(100% - 56px)', 
         width: '100%',
+        minHeight: '450px',
         backgroundImage:
                     `linear-gradient(
                      rgba(0, 0, 0, 0.45), 
@@ -64,7 +66,7 @@ const useStyles = makeStyles({
         backgroundSize: 'cover',
         zIndex: -1, 
         position: "absolute", 
-        bottom: '-1px', 
+        // bottom: '-1px', 
         left: 0,
     },
     // subtitle: {
