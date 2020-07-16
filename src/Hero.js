@@ -2,10 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Grid, useMediaQuery } from '@material-ui/core';
 import {useSpring, animated} from 'react-spring'
-// import meIMG from './images/me.jpg';
-import meSmIMG from './images/Daniel.jpg';
 import portraitIMG from './images/dk.jpg';
-import portraitIMG2 from './images/dkFilter.jpg';
 import portraitIMG3 from './images/dkFilter2.jpg';
 
 const useStyles = makeStyles({
@@ -60,8 +57,6 @@ const useStyles = makeStyles({
                      rgba(0, 0, 0, 0.45)
                     ),
                     url(${portraitIMG3})`,
-                    // url(${portraitIMG})`,
-                    // url(${portraitIMG})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         zIndex: -1, 

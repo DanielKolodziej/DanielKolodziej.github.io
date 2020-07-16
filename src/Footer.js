@@ -4,7 +4,7 @@ import { Typography, Grid, useMediaQuery, BottomNavigation, BottomNavigationActi
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import DescriptionIcon from '@material-ui/icons/Description';
-import resume from './images/Kolodziej_Daniel_Resume.docx';
+import resume from './images/Kolodziej_Daniel_Resume.pdf';
 
 const useStyles = makeStyles({
     background: {

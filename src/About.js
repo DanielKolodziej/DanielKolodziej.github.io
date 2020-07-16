@@ -8,7 +8,7 @@ const useStyles = makeStyles({
         padding: '2em',
         height: '100vh',
         // maxHeight: '600px',
-        minHeight: '400px',
+        // minHeight: '400px',
     },
     title: {
         backgroundColor: '#fff',
